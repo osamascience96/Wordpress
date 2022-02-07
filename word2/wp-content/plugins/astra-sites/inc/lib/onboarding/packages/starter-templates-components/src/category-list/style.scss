@@ -1,0 +1,33 @@
+// Core CSS.
+@import url('../style.scss');
+
+.stc-category-list {
+	display: flex;
+}
+
+.stc-category-list-item {
+	display: flex;
+	cursor: pointer;
+	padding: 0px 10px;
+	align-items: center;
+	justify-content: space-between;
+	color: rgba(49, 42, 64, 0.7);
+
+	&:hover .stc-category-list-title,
+	&.active .stc-category-list-title {
+		color: var( --stc-color-heading );
+	}
+}
+
+/**
+ * More Items.
+ */
+.stc-category-list-more {
+	--stc-toggle-dropdown-selected-background: transparent;
+	--stc-toggle-dropdown-popup-min-width: 220px;
+    --stc-toggle-dropdown-popup-item-padding: 5px 17px;
+    --stc-toggle-dropdown-popup-padding: 10px 0;
+	--stc-toggle-dropdown-border-color: transparent;
+	--stc-toggle-dropdown-selected-padding: 0;
+	--stc-toggle-dropdown-popup-left: calc( 100% - var( --stc-toggle-dropdown-popup-min-width ) );
+}

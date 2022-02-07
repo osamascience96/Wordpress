@@ -1,0 +1,30 @@
+.stc-tooltip {
+    position: relative;
+}
+
+.stc-tooltip-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.stc-tooltip-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.stc-tooltip-content {
+    position: absolute;
+    right: 0;
+    z-index: 99;
+    color: #fff;
+    box-shadow: 0px 4px 8px -2px rgb(9 30 66 / 25%), 0px 0px 1px rgb(9 30 66 / 31%);
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    min-width: max-content;
+    border-radius: 2px;
+    background: var(--stc-color-heading);
+    font-size: 13px;
+    top: 135%;
+    padding: 6px 12px;
+}

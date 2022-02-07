@@ -1,0 +1,61 @@
+.customize-control-ast-responsive-toggle-control .components-toggle-control .components-base-control__field, .ast-responsive-toggle-control .components-base-control__field {
+    margin: 0;
+}
+
+.customize-control-ast-responsive-toggle-control .components-toggle-control .components-form-toggle, .customize-control-ast-link .ast-responsive-toggle-control .components-form-toggle {
+    margin: 0;
+    order: 2;
+}
+
+.customize-control-ast-link .ast-responsive-toggle-control .components-base-control__field {
+    margin: 20px 0;
+}
+
+.customize-control-ast-responsive-toggle-control .components-toggle-control .components-toggle-control__label, .ast-responsive-toggle-control label {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.customize-control-ast-responsive-toggle-control .ast-responsive-toggle-control-wrapper .ast-responsive-toggle-control {
+    display: none;
+}
+
+.customize-control-ast-responsive-toggle-control .ast-responsive-toggle-control-wrapper .ast-responsive-toggle-control.active {
+    width: 90%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.customize-control-ast-responsive-toggle-control .ast-responsive-toggle-control-wrapper .ast-responsive-toggle-btns {
+    position: unset;
+    float: right;
+}
+
+.customize-control-ast-responsive-toggle-control .ast-responsive-toggle-control-wrapper .ast-responsive-toggle-btns > li.active{
+    vertical-align: middle;
+}
+
+.ast-responsive-toggle-btns > li {
+    margin-bottom: 0;
+    display: none;
+}
+  
+.ast-responsive-toggle-btns > li.active {
+    display: inline-block;
+}
+
+.ast-responsive-toggle-btns button[type="button"] {
+    padding: 0;
+    cursor: pointer;
+    background: none;
+    border: none;
+    opacity: .75;
+    outline: none;
+}
+
+.ast-responsive-toggle-btns button[type="button"] > i {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+}

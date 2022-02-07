@@ -1,0 +1,420 @@
+@import "lae-lib";
+
+/* --------------- Reset styles --------- */
+
+.panel-grid .widget {
+  overflow: initial;
+}
+
+.lae-clear {
+  clear: both;
+}
+
+.lae-center {
+  text-align: center;
+}
+
+.lae-container, .lae-uber-grid-container, .lae-grid-container {
+  box-sizing: border-box;
+
+  *, *::after, *::before {
+    box-sizing: inherit;
+  }
+
+  ol, ul, ol > li, ul > li, ol:hover, ul:hover, ul > li:hover, ol > li:hover, ol > li > a, ul > li > a, ol > li > a:hover, ul > li > a:hover, img {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    list-style: none;
+    background: none;
+
+    &:before, &:after {
+      display: none;
+    }
+  }
+
+  a {
+    text-decoration: initial;
+  }
+
+  img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+}
+
+/* ------- General styles ------------ */
+
+.lae-container {
+  @include lae-container;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel-grid .widget {
+  border: 0;
+}
+
+.lae-center {
+  text-align: center;
+}
+
+/* ---------------- Uber Grid Styles ---------------------- */
+
+.lae-uber-grid-container {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 35px;
+
+  &.lae-grid-auto-column-layout {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  &.lae-grid-mobile-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &.lae-grid-mobile-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &.lae-grid-mobile-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &.lae-grid-mobile-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &.lae-grid-mobile-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  &.lae-grid-mobile-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @media only screen and (min-width: 767px) {
+    &.lae-grid-tablet-1 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &.lae-grid-tablet-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &.lae-grid-tablet-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &.lae-grid-tablet-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &.lae-grid-tablet-5 {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    &.lae-grid-tablet-6 {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+
+    &.lae-grid-desktop-1 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &.lae-grid-desktop-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &.lae-grid-desktop-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &.lae-grid-desktop-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &.lae-grid-desktop-5 {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    &.lae-grid-desktop-6 {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+}
+
+
+/* -------- Widget separator headline ------------ */
+
+.lae-widget-heading {
+  @include lae-heading-style();
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  @include respond-to-max(767) {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+
+/* --------------- Button CSS -------------------- */
+
+input.lae-button, button.lae-button, a.lae-button, .lae-button:active, .lae-button:visited {
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 16px 40px;
+  margin: 0;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #f94213;
+  color: #fefefe;
+  outline: none;
+  transition: all 0.4s ease-in-out 0s;
+
+  &.lae-rounded {
+    border-radius: 999px;
+  }
+
+  &.lae-large {
+    padding: 20px 60px;
+  }
+
+  &.lae-small {
+    padding: 12px 25px;
+    font-size: 11px;
+  }
+
+  &:hover {
+    background-color: #f9633e;
+    color: #fefefe;
+  }
+}
+
+$skin-names: ("black", "blue", "cyan", "green", "orange", "pink", "red", "teal");
+$color-collection: (#363636, #46a5d5, #57c0dc, #00a57d, #e87151, #dd5679, #da4f49, #28c2ba);
+
+@for $i from 0 to length($skin-names) {
+  $skin-name: nth($skin-names, $i+1);
+  $skin-color: nth($color-collection, $i+1);
+  .lae-button.lae-#{$skin-name} {
+    background-color: $skin-color;
+  }
+  .lae-button.lae-#{$skin-name}:hover {
+    background-color: lighten($skin-color, 5%);
+  }
+}
+
+.lae-button.lae-trans {
+  color: #333;
+  background-color: transparent; /* IE */
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #a5a5a5;
+
+  &:hover {
+    background-color: #fff;
+    color: #333 !important;
+    border-color: #fff;
+  }
+}
+
+.lae-button.lae-semitrans {
+  color: #fff;
+  background-color: transparent; /* IE */
+  background-color: rgba(125, 125, 125, 0.5);
+
+  &:hover {
+    background-color: #fff;
+    color: #333 !important;
+  }
+}
+
+/* Template Library Theme Builder Templates */
+
+.single-elementor_library [data-elementor-type="livemesh_grid"] .elementor-element.elementor-widget.elementor-widget-livemesh-grid-item .elementor-widget-container {
+  border: 5px double #a4a0a2;
+  padding: 10px;
+}
+
+.single-elementor_library [data-elementor-type="livemesh_grid"] .elementor-column {
+  border: 1px dotted #827e80;
+}
+
+.lae-template-error {
+  padding: 20px;
+  font-style: italic;
+}
+
+/* ---------------------------------- Button Widget ---------------------------------- */
+
+input.lae-button.lae-with-icon, button.lae-button.lae-with-icon, a.lae-button.lae-with-icon, .lae-button.lae-with-icon:active, .lae-button.lae-with-icon:visited {
+  i, img.lae-thumbnail {
+    margin-right: 15px;
+
+    .rtl & {
+      margin-right: 0;
+      margin-left: 15px;
+    }
+  }
+
+  i {
+    color: #fff;
+    font-size: 24px;
+    vertical-align: middle;
+    line-height: 1;
+  }
+
+  img.lae-thumbnail {
+    display: inline !important;
+    vertical-align: middle;
+    max-width: 50px;
+  }
+}
+
+
+/* ---------------------------------- Heading ---------------------------------- */
+
+.lae-heading {
+  text-align: center;
+  margin: 0 auto 60px;
+  max-width: 640px;
+  @include respond-to-max(767) {
+    margin-bottom: 40px;
+  }
+
+  .lae-text {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 auto;
+    @include respond-to-max(767) {
+      font-size: 15px;
+      line-height: 26px;
+    }
+  }
+
+  &.lae-alignleft, &.lae-alignright {
+    margin: 0;
+
+    .lae-text {
+      margin: 0;
+    }
+  }
+
+  &.lae-alignleft {
+    text-align: left;
+  }
+
+  &.lae-alignright {
+    text-align: right;
+    max-width: none;
+  }
+}
+
+.lae-heading {
+  .lae-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    margin: 0 auto 20px;
+    color: #333;
+    font-weight: bold;
+    @include respond-to-max(767) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  .lae-dark-bg & {
+    .lae-title {
+      color: $dark-bg-primary-text;
+    }
+
+    .lae-subtitle {
+      color: $dark-bg-meta-text;
+    }
+
+    .lae-text {
+      color: $dark-bg-secondary-text;
+    }
+  }
+
+  &.lae-alignleft, &.lae-alignright {
+    .lae-title {
+      margin: 0 0 20px;
+    }
+  }
+}
+
+.lae-heading {
+
+  .lae-subtitle {
+    margin: 0 auto 5px;
+    color: #888;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+    @include respond-to-max(767) {
+      font-size: 11px;
+      line-height: 18px;
+    }
+  }
+
+  &.lae-alignleft, &.lae-alignright {
+    .lae-subtitle {
+      margin: 0 0 5px;
+      padding: 0;
+
+      &:before, &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------------- General Styles -------------------------------------------------- */
+
+.lae-post-link-overlay {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+.lae-terms, .lae-post-title {
+  a {
+    transition: all 0.5s ease-out 0s;
+  }
+}
+
+.lae-read-more {
+  position: relative;
+  display: inline-block;
+  font-size: 0.75rem;
+  line-height: 1;
+  text-decoration: none;
+  padding: 8px 15px;
+  margin-top: 15px;
+  transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+}
+
+.lae-post-featured-img-bg {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 15px;
+}
+
+

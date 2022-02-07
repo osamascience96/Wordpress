@@ -1,0 +1,44 @@
+body {
+	/* Colors */
+    --stc-color-accent: #2563EB;
+    --stc-color-accent-hover: #1D4ED8;
+    --stc-color-heading: #1F2937;
+    --stc-color-body: #4B5563;
+    --stc-color-light-gray: #E5E7EB;
+    --stc-color-placeholder: #6B7280;
+    --stc-color-white: #FFFFFF;
+    --stc-color-favorite: #E91E63;
+    --stc-background-secondary: #F7F7F9;
+    --stc-background-primary: #FFFFFF;
+    --stc-background-light: #F9FAFB;
+
+    /* Font sizes */
+    --stc-font-size-xxl: 30px;
+    --stc-font-size-xl: 24px;
+    --stc-font-size-l: 20px;
+    --stc-font-size-m: 18px;
+    --stc-font-size-s: 16px;
+    --stc-font-size-xs: 14px;
+    --stc-font-size-xxs: 11px;
+
+
+    /** Font Weight */
+    --stc-font-weight-extra-bold: 600;
+    --stc-font-weight-bold: 500;
+    --stc-font-weight-normal: 400;
+
+    /** Font Line Height */
+    --stc-font-line-height-xl: 36px;
+    --stc-font-line-height-l: 32px;
+    --stc-font-line-height-m: 28px;
+    --stc-font-line-height-s: 24px;
+    --stc-font-line-height-xs: 20px;
+
+    /** Border */
+    --stc-border-color: #D1D5DB;
+    --stc-border-radius-5: 5px;
+    --stc-border-radius-4: 4px;
+    --stc-border-radius-3: 3px;
+    --stc-border-radius-2: 2px;
+    --stc-border-radius-1: 1px;
+}

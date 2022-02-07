@@ -1,0 +1,96 @@
+// Core CSS.
+@import url('../style.scss');
+
+.stc-grid-wrap {
+	display: grid;
+	grid-gap: 2.5rem;
+
+	&.grid-1 {
+		grid-template-columns: repeat(1,1fr);
+	}
+	&.grid-2 {
+		grid-template-columns: repeat(2,1fr);
+	}
+	&.grid-3 {
+		grid-template-columns: repeat(3,1fr);
+	}
+	&.grid-4 {
+		grid-template-columns: repeat(4,1fr);
+	}
+	&.grid-5 {
+		grid-template-columns: repeat(5,1fr);
+	}
+	&.grid-6 {
+		grid-template-columns: repeat(6,1fr);
+	}
+}
+
+.stc-grid-item-header {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 25px;
+    border-top: 1px solid #e9e9e9;
+}
+
+.stc-grid-item-title {
+	margin: 15px 0;
+	text-align: center;
+	color: var( --stc-color-body );
+	font-size: var( --stc-font-size-m );
+	font-weight: var( --stc-font-weight-bold );
+	line-height: var( --stc-font-line-height-s );
+}
+
+.stc-grid-item {
+	cursor: pointer;
+}
+
+.stc-grid-item-screenshot {
+	display: block;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color: var( --stc-background-secondary );
+	border-top-left-radius: var( --stc-border-radius-2 );
+	border-top-right-radius: var( --stc-border-radius-2 );
+
+	&:after {
+		content: "";
+		display: block;
+		padding-top: 118%;
+	}
+}
+
+.stc-grid-item-inner {
+	margin: 0;
+	position: relative;
+	transition: all 0.15s;
+	box-sizing: border-box;
+	background: var( --stc-color-white );
+	border-radius: var( --stc-border-radius-5 );
+	border: 1px solid var( --stc-color-light-gray );
+	&:hover {
+		box-shadow: 0 6px 14px rgb(0 0 0 / 12%);
+	}
+}
+
+.stc-grid-favorite {
+	svg {
+		width: 16px;
+		height: 16px;
+		cursor: pointer;
+		path {
+			fill: var( --stc-color-placeholder );
+		}
+	}
+
+	& svg:hover, &.active svg {
+		path {
+			fill: var( --stc-color-favorite );
+		}
+	}
+}

@@ -1,0 +1,62 @@
+// Core CSS.
+@import url('../style.scss');
+
+.stc-toggle-dropdown {
+	--stc-logo-width: 20px;
+	--stc-logo-height: 20px;
+	--stc-logo-border-raidus: 50%;
+	position: relative;
+}
+
+.stc-toggle-dropdown-popup {
+	right: 0;
+	position: absolute;
+	z-index: 99;
+	background: var( --stc-color-white );
+	box-shadow: 1px 2px 5px 1px rgb(0 0 0 / 15%);
+	top: var( --stc-toggle-dropdown-popup-top, 100% );
+	left: var( --stc-toggle-dropdown-popup-left, 0 );
+	text-align: left;
+	padding: var( --stc-toggle-dropdown-popup-padding, 0 );
+    border-radius: var( --stc-border-radius-4 );
+	min-width: var( --stc-toggle-dropdown-popup-min-width, auto );
+}
+
+.stc-toggle-dropdown-popup-item {
+	margin: var( --stc-toggle-dropdown-popup-item-margin, 0 0 5px 0 );
+    cursor: var( --stc-toggle-dropdown-popup-item-cursor, initial );
+	padding: var( --stc-toggle-dropdown-popup-item-padding, 12px 22px );
+    margin-bottom: 0;
+
+	&:last-child {
+		margin-bottom: 0;
+
+		&:hover, &.active {
+			border-radius: 0 0 var( --stc-border-radius-4 ) var( --stc-border-radius-4 );
+		}
+	}
+	&:hover,
+	&.active {
+		background-color: var(--stc-background-light);
+	}
+}
+
+.stc-toggle-dropdown-selected {
+	border: 1px solid var( --stc-toggle-dropdown-border-color, var( --stc-border-color ) );
+	background: var( --stc-toggle-dropdown-selected-background, var( --stc-color-white ) );
+	padding: var( --stc-toggle-dropdown-selected-padding, 6px 10px 6px 16px );
+	border-radius: var( --stc-border-radius-4 );
+	font-size: var( --stc-font-size-xs );
+	line-height: var( --stc-font-line-height-xs );
+	color: var( --stc-color-body );
+	display: flex;
+    align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+
+	svg {
+		margin-left: 10px;
+		height: var( --stc-toggle-dropdown-icon-height, 6px );
+		fill: var( --stc-color-body );
+	}
+}

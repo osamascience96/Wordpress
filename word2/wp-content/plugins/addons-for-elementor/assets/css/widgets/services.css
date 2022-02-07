@@ -1,0 +1,181 @@
+/* ------------------------------------ Services ------------------------------------------- */
+/* -------- General services -------- */
+.lae-services {
+  clear: both; }
+  .lae-services .lae-service {
+    margin-bottom: 20px; }
+    .lae-services .lae-service .lae-icon-wrapper i {
+      -webkit-transition: color .4s ease-in-out 0s;
+      transition: color .4s ease-in-out 0s; }
+      .lae-services .lae-service .lae-icon-wrapper i:hover {
+        color: #555; }
+      .lae-dark-bg .lae-services .lae-service .lae-icon-wrapper i:hover {
+        color: #d5d5d5; }
+    .lae-services .lae-service .lae-service-text {
+      font-size: 15px;
+      line-height: 24px; }
+      .lae-dark-bg .lae-services .lae-service .lae-service-text {
+        color: rgba(255, 255, 255, 0.7); }
+        .lae-dark-bg .lae-services .lae-service .lae-service-text .lae-title {
+          color: white; }
+        .lae-dark-bg .lae-services .lae-service .lae-service-text .lae-service-details {
+          color: rgba(255, 255, 255, 0.7); }
+      .lae-services .lae-service .lae-service-text .lae-title-link .lae-title {
+        -webkit-transition: color .3s ease-in-out 0s;
+        transition: color .3s ease-in-out 0s; }
+      .lae-services .lae-service .lae-service-text .lae-title-link:hover .lae-title {
+        color: #666; }
+      .lae-dark-bg .lae-services .lae-service .lae-service-text .lae-title-link:hover .lae-title {
+        color: rgba(255, 255, 255, 0.7); }
+
+/* Style 1 */
+.lae-services-style1 .lae-service .lae-icon-wrapper i {
+  display: block;
+  text-align: center;
+  font-size: 96px;
+  line-height: 1;
+  margin-bottom: 20px;
+  -webkit-transition: color .4s ease-in-out 0s;
+  transition: color .4s ease-in-out 0s;
+  color: #888; }
+  .lae-dark-bg .lae-services-style1 .lae-service .lae-icon-wrapper i {
+    color: #a5a5a5; }
+  .lae-dark-bg .lae-services-style1 .lae-service .lae-icon-wrapper i:hover {
+    color: #c5c5c5; }
+.lae-services-style1 .lae-service .lae-image-wrapper img {
+  display: block;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto 25px;
+  -webkit-transition: all .4s ease-in-out 0s;
+  transition: all .4s ease-in-out 0s; }
+.lae-services-style1 .lae-service .lae-service-text {
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto; }
+  .lae-services-style1 .lae-service .lae-service-text .lae-title {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    clear: none;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-bottom: 20px; }
+.lae-services-style1 .lae-service:hover .lae-image-wrapper img {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9); }
+
+/* Style 2 */
+.lae-services-style2 .lae-service .lae-image-wrapper img, .lae-services-style2 .lae-service .lae-icon-wrapper i {
+  float: left;
+  margin-right: 18px;
+  color: #888; }
+  .rtl .lae-services-style2 .lae-service .lae-image-wrapper img, .rtl .lae-services-style2 .lae-service .lae-icon-wrapper i {
+    float: right;
+    margin: 0 0 0 18px; }
+  .lae-dark-bg .lae-services-style2 .lae-service .lae-image-wrapper img, .lae-dark-bg .lae-services-style2 .lae-service .lae-icon-wrapper i {
+    color: #a5a5a5; }
+  .lae-dark-bg .lae-services-style2 .lae-service .lae-image-wrapper img:hover, .lae-dark-bg .lae-services-style2 .lae-service .lae-icon-wrapper i:hover {
+    color: #c5c5c5; }
+.lae-services-style2 .lae-service .lae-icon-wrapper i {
+  font-size: 24px;
+  line-height: 32px; }
+.lae-services-style2 .lae-service .lae-service-text .lae-title {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  clear: none;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-bottom: 20px; }
+
+/* Style 3 */
+.lae-services-style3 .lae-service .lae-icon-wrapper i {
+  display: block;
+  text-align: left;
+  font-size: 80px;
+  line-height: 1;
+  margin-bottom: 25px;
+  color: #555; }
+  .rtl .lae-services-style3 .lae-service .lae-icon-wrapper i {
+    text-align: right; }
+  .lae-services-style3 .lae-service .lae-icon-wrapper i:hover {
+    color: #888; }
+  .lae-dark-bg .lae-services-style3 .lae-service .lae-icon-wrapper i {
+    color: #c5c5c5; }
+  .lae-dark-bg .lae-services-style3 .lae-service .lae-icon-wrapper i:hover {
+    color: #e5e5e5; }
+.lae-services-style3 .lae-service .lae-image-wrapper img {
+  display: block;
+  max-width: 100%;
+  text-align: left;
+  margin-bottom: 25px; }
+.lae-services-style3 .lae-service .lae-service-text {
+  text-align: left;
+  max-width: 300px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+  color: #888; }
+  .rtl .lae-services-style3 .lae-service .lae-service-text {
+    text-align: right; }
+  .lae-services-style3 .lae-service .lae-service-text ul.lae-services-list {
+    padding: 0;
+    margin: 0;
+    border: none; }
+  .lae-services-style3 .lae-service .lae-service-text ul.lae-services-list li {
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 42px; }
+    .lae-services-style3 .lae-service .lae-service-text ul.lae-services-list li:hover {
+      padding: 0; }
+    .lae-dark-bg .lae-services-style3 .lae-service .lae-service-text ul.lae-services-list li {
+      border-color: #333; }
+  .lae-services-style3 .lae-service .lae-service-text ul.lae-services-list li:before {
+    font-family: 'lae-icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    background: none;
+    float: none;
+    vertical-align: middle;
+    margin: 0 15px 0 0;
+    content: "\e917";
+    color: #BBBBBB;
+    font-size: 12px;
+    line-height: 1; }
+    .rtl .lae-services-style3 .lae-service .lae-service-text ul.lae-services-list li:before {
+      display: none; }
+    .lae-dark-bg .lae-services-style3 .lae-service .lae-service-text ul.lae-services-list li:before {
+      color: #606060; }
+  .lae-services-style3 .lae-service .lae-service-text .lae-title {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    clear: none;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-bottom: 20px; }
+
+/*# sourceMappingURL=services.css.map */

@@ -1,0 +1,16 @@
+/*! elementor - v3.5.3 - 28-12-2021 */
+.elementor-edit-area-active .elementor-top-section > .elementor-container > .elementor-row {
+  min-height: 40px; }
+
+.elementor-edit-area-active .elementor-inner-section > .elementor-container > .elementor-row {
+  min-height: 40px; }
+
+.elementor-edit-area-active .elementor-column-wrap.elementor-element-empty .elementor-widget-wrap {
+  min-height: 30px; }
+  @media (min-width: 768px) {
+    .elementor-edit-area-active .elementor-column-wrap.elementor-element-empty .elementor-widget-wrap {
+      margin: 10px; } }
+
+.elementor-edit-area-active .handle {
+  display: none; }
+/*# sourceMappingURL=editor-preview-legacy.css.map */

@@ -1,0 +1,76 @@
+/*
+ * jQuery FlexSlider v2.7.1
+ * https://www.woocommerce.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ *
+ */
+/* ====================================================================================================================
+ * FONT-FACE
+ * ====================================================================================================================*/
+
+/* ====================================================================================================================
+ * RESETS
+ * ====================================================================================================================*/
+
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+.lae-flexslider {
+	direction:rtl;
+}
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
+
+.carousel li {
+  margin-right: 5px;
+}
+.lae-flex-direction-nav {
+  *height: 0;
+}
+
+.lae-flex-direction-nav a:before {
+  content: '\f002';
+}
+.lae-flex-direction-nav a.lae-flex-next:before {
+  content: '\f001';
+}
+.lae-flex-direction-nav .lae-flex-prev {
+  left: auto; right: -50px;
+}
+.lae-flex-direction-nav .lae-flex-next {
+  right: auto; left: -50px;
+  text-align: left;
+}
+.lae-flexslider:hover .lae-flex-direction-nav .lae-flex-prev {
+  opacity: 0.7;
+  left: auto; right: 10px;
+}
+
+.lae-flexslider:hover .lae-flex-direction-nav .lae-flex-next {
+  opacity: 0.7;
+  right: auto; left: 10px;
+}
+
+
+.lae-flex-pauseplay a {
+  left: auto; right: 10px;
+}
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+@media screen and (max-width: 860px) {
+  .lae-flex-direction-nav .lae-flex-prev {
+    left: auto; right: 10px;
+  }
+  .lae-flex-direction-nav .lae-flex-next {
+    right: auto; left: 10px;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZsZXhzbGlkZXItcnRsLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7OztHQVVHO0FBQ0g7O3lIQUV5SDs7QUFFekg7O3lIQUV5SDs7QUFFekg7O3lIQUV5SDtBQUN6SDtDQUNDLGNBQWM7Q0FDZDtBQUNEOzt5SEFFeUg7O0FBRXpIO0VBQ0Usa0JBQWtCO0NBQ25CO0FBQ0Q7R0FDRSxVQUFXO0NBQ1o7O0FBRUQ7RUFDRSxpQkFBaUI7Q0FDbEI7QUFDRDtFQUNFLGlCQUFpQjtDQUNsQjtBQUNEO0VBQ0UsV0FBVyxDQUFDLGFBQWE7Q0FDMUI7QUFDRDtFQUNFLFlBQVksQ0FBQyxZQUFZO0VBQ3pCLGlCQUFpQjtDQUNsQjtBQUNEO0VBQ0UsYUFBYTtFQUNiLFdBQVcsQ0FBQyxZQUFZO0NBQ3pCOztBQUVEO0VBQ0UsYUFBYTtFQUNiLFlBQVksQ0FBQyxXQUFXO0NBQ3pCOzs7QUFHRDtFQUNFLFdBQVcsQ0FBQyxZQUFZO0NBQ3pCOztBQUVEOzt5SEFFeUg7QUFDekg7RUFDRTtJQUNFLFdBQVcsQ0FBQyxZQUFZO0dBQ3pCO0VBQ0Q7SUFDRSxZQUFZLENBQUMsV0FBVztHQUN6QjtDQUNGIiwiZmlsZSI6ImZsZXhzbGlkZXItcnRsLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gKiBqUXVlcnkgRmxleFNsaWRlciB2Mi43LjFcbiAqIGh0dHBzOi8vd3d3Lndvb2NvbW1lcmNlLmNvbS9mbGV4c2xpZGVyL1xuICpcbiAqIENvcHlyaWdodCAyMDEyIFdvb1RoZW1lc1xuICogRnJlZSB0byB1c2UgdW5kZXIgdGhlIEdQTHYyIGFuZCBsYXRlciBsaWNlbnNlLlxuICogaHR0cDovL3d3dy5nbnUub3JnL2xpY2Vuc2VzL2dwbC0yLjAuaHRtbFxuICpcbiAqIENvbnRyaWJ1dGluZyBhdXRob3I6IFR5bGVyIFNtaXRoIChAbWJtdWZmZmluKVxuICpcbiAqL1xuLyogPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbiAqIEZPTlQtRkFDRVxuICogPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0qL1xuXG4vKiA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuICogUkVTRVRTXG4gKiA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG5cbi8qID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4gKiBCQVNFIFNUWUxFU1xuICogPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0qL1xuLmxhZS1mbGV4c2xpZGVyIHtcblx0ZGlyZWN0aW9uOnJ0bDtcbn1cbi8qID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4gKiBERUZBVUxUIFRIRU1FXG4gKiA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG5cbi5jYXJvdXNlbCBsaSB7XG4gIG1hcmdpbi1yaWdodDogNXB4O1xufVxuLmxhZS1mbGV4LWRpcmVjdGlvbi1uYXYge1xuICAqaGVpZ2h0OiAwO1xufVxuXG4ubGFlLWZsZXgtZGlyZWN0aW9uLW5hdiBhOmJlZm9yZSB7XG4gIGNvbnRlbnQ6ICdcXGYwMDInO1xufVxuLmxhZS1mbGV4LWRpcmVjdGlvbi1uYXYgYS5sYWUtZmxleC1uZXh0OmJlZm9yZSB7XG4gIGNvbnRlbnQ6ICdcXGYwMDEnO1xufVxuLmxhZS1mbGV4LWRpcmVjdGlvbi1uYXYgLmxhZS1mbGV4LXByZXYge1xuICBsZWZ0OiBhdXRvOyByaWdodDogLTUwcHg7XG59XG4ubGFlLWZsZXgtZGlyZWN0aW9uLW5hdiAubGFlLWZsZXgtbmV4dCB7XG4gIHJpZ2h0OiBhdXRvOyBsZWZ0OiAtNTBweDtcbiAgdGV4dC1hbGlnbjogbGVmdDtcbn1cbi5sYWUtZmxleHNsaWRlcjpob3ZlciAubGFlLWZsZXgtZGlyZWN0aW9uLW5hdiAubGFlLWZsZXgtcHJldiB7XG4gIG9wYWNpdHk6IDAuNztcbiAgbGVmdDogYXV0bzsgcmlnaHQ6IDEwcHg7XG59XG5cbi5sYWUtZmxleHNsaWRlcjpob3ZlciAubGFlLWZsZXgtZGlyZWN0aW9uLW5hdiAubGFlLWZsZXgtbmV4dCB7XG4gIG9wYWNpdHk6IDAuNztcbiAgcmlnaHQ6IGF1dG87IGxlZnQ6IDEwcHg7XG59XG5cblxuLmxhZS1mbGV4LXBhdXNlcGxheSBhIHtcbiAgbGVmdDogYXV0bzsgcmlnaHQ6IDEwcHg7XG59XG5cbi8qID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4gKiBSRVNQT05TSVZFXG4gKiA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA4NjBweCkge1xuICAubGFlLWZsZXgtZGlyZWN0aW9uLW5hdiAubGFlLWZsZXgtcHJldiB7XG4gICAgbGVmdDogYXV0bzsgcmlnaHQ6IDEwcHg7XG4gIH1cbiAgLmxhZS1mbGV4LWRpcmVjdGlvbi1uYXYgLmxhZS1mbGV4LW5leHQge1xuICAgIHJpZ2h0OiBhdXRvOyBsZWZ0OiAxMHB4O1xuICB9XG59XG4iXX0= */

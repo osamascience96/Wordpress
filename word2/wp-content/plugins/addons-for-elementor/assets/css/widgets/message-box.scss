@@ -1,0 +1,48 @@
+
+@import "../lae-lib";
+
+/* ------------------------------------ Services ------------------------------------------- */
+
+/* -------- General services -------- */
+
+.lae-message-box-container {
+  transition: height .25s cubic-bezier(.06,.51,.48,11)
+}
+
+.lae-message-box {
+  display: flex;
+  padding: 40px;
+  background: #d9edf7;
+  transition: opacity .2s ease,visibility .2s ease;
+  &.lae-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .lae-icon-wrapper, .lae-image-wrapper {
+    line-height: 1;
+    margin-right: 20px;
+  }
+  .lae-icon-wrapper i {
+    color: #748085;
+    font-size: 36px;
+  }
+  .lae-message-title {
+    margin: 0;
+  }
+  .lae-message-text {
+    margin: 0;
+  }
+  .lae-close-icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    line-height: 1;
+    cursor: pointer;
+    transition: color .25s ease-in-out;
+    i {
+      color: #697073;
+      font-size: 24px;
+    }
+  }
+}
+

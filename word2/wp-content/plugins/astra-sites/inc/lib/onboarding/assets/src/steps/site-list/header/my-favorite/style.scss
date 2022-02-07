@@ -1,0 +1,20 @@
+.st-my-favorite {
+	cursor: pointer;
+
+    svg {
+        width: 20px;
+        height: 20px;
+        fill: var(--st-color-placeholder);
+    }
+
+	&.active,
+	:hover {
+		svg {
+			fill: var(--st-color-favorite);
+		}
+	}
+
+	.stc-tooltip-content {
+		right: 0;
+	}
+}

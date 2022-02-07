@@ -1,0 +1,242 @@
+
+@import "../lae-lib";
+
+/* ------------------------------------ Services ------------------------------------------- */
+
+/* -------- General services -------- */
+
+.lae-services {
+  clear: both;
+
+  .lae-service {
+    margin-bottom: 20px;
+
+    .lae-icon-wrapper i {
+      transition: color .4s ease-in-out 0s;
+
+      &:hover {
+        color: #555;
+      }
+
+      .lae-dark-bg &:hover {
+        color: #d5d5d5;
+      }
+    }
+
+    .lae-service-text {
+      font-size: 15px;
+      line-height: 24px;
+
+      .lae-dark-bg & {
+        color: $dark-bg-secondary-text;
+
+        .lae-title {
+          color: $dark-bg-primary-text;
+        }
+        .lae-service-details {
+          color: $dark-bg-secondary-text;
+        }
+      }
+
+      .lae-title-link {
+        .lae-title {
+          transition: color .3s ease-in-out 0s;
+        }
+
+        &:hover .lae-title {
+          color: #666;
+        }
+
+        .lae-dark-bg &:hover .lae-title {
+          color: $dark-bg-secondary-text;
+        }
+      }
+    }
+  }
+}
+
+/* Style 1 */
+.lae-services-style1 {
+  .lae-service {
+    .lae-icon-wrapper i {
+      display: block;
+      text-align: center;
+      font-size: 96px;
+      line-height: 1;
+      margin-bottom: 20px;
+      transition: color .4s ease-in-out 0s;
+      color: #888;
+
+      .lae-dark-bg & {
+        color: #a5a5a5;
+      }
+
+      .lae-dark-bg &:hover {
+        color: #c5c5c5;
+      }
+    }
+
+    .lae-image-wrapper img {
+      display: block;
+      max-width: 100%;
+      text-align: center;
+      margin: 0 auto 25px;
+      transition: all .4s ease-in-out 0s;
+    }
+
+    .lae-service-text {
+      text-align: center;
+      max-width: 300px;
+      margin: 0 auto;
+
+      .lae-title {
+        @include lae-heading-style();
+        margin-bottom: 20px;
+      }
+    }
+
+    &:hover {
+      .lae-image-wrapper img {
+        transform: scale(0.9, 0.9);
+      }
+    }
+  }
+}
+
+/* Style 2 */
+
+.lae-services-style2 {
+  .lae-service {
+    .lae-image-wrapper img, .lae-icon-wrapper i {
+      float: left;
+      margin-right: 18px;
+      color: #888;
+
+      .rtl & {
+        float: right;
+        margin: 0 0 0 18px;
+      }
+
+      .lae-dark-bg & {
+        color: #a5a5a5;
+      }
+
+      .lae-dark-bg &:hover {
+        color: #c5c5c5;
+      }
+    }
+
+    .lae-icon-wrapper i {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .lae-service-text .lae-title {
+      @include lae-heading-style();
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/* Style 3 */
+
+.lae-services-style3 {
+  .lae-service {
+    .lae-icon-wrapper i {
+      display: block;
+      text-align: left;
+      font-size: 80px;
+      line-height: 1;
+      margin-bottom: 25px;
+      color: #555;
+
+      .rtl & {
+        text-align: right;
+      }
+
+      &:hover {
+        color: #888;
+      }
+
+      .lae-dark-bg & {
+        color: #c5c5c5;
+      }
+
+      .lae-dark-bg &:hover {
+        color: #e5e5e5;
+      }
+    }
+
+    .lae-image-wrapper img {
+      display: block;
+      max-width: 100%;
+      text-align: left;
+      margin-bottom: 25px;
+    }
+
+    .lae-service-text {
+      text-align: left;
+      max-width: 300px;
+      margin: 0;
+      font-size: 14px;
+      line-height: 26px;
+      color: #888;
+
+      .rtl & {
+        text-align: right;
+      }
+
+      ul.lae-services-list {
+        padding: 0;
+        margin: 0;
+        border: none;
+      }
+
+      ul.lae-services-list li {
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        line-height: 42px;
+
+        &:hover {
+          padding: 0;
+        }
+
+        .lae-dark-bg & {
+          border-color: #333;
+        }
+      }
+
+      ul.lae-services-list li:before {
+        @include lae-icon-font();
+        position: relative;
+        display: inline-block;
+        height: auto;
+        width: auto;
+        background: none;
+        float: none;
+        vertical-align: middle;
+        margin: 0 15px 0 0;
+        content: "\e917";
+        color: #BBBBBB;
+        font-size: 12px;
+        line-height: 1;
+
+        .rtl & {
+          display: none;
+        }
+
+        .lae-dark-bg & {
+          color: #606060;
+        }
+      }
+
+      .lae-title {
+        @include lae-heading-style();
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

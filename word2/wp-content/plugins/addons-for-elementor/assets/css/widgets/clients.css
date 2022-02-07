@@ -1,0 +1,52 @@
+/* ---------------------------------- Clients Widget ---------------------------------- */
+.lae-clients .lae-client {
+  position: relative;
+  border: 1px solid #ddd;
+  overflow: hidden; }
+  .lae-dark-bg .lae-clients .lae-client {
+    border-color: #505050 !important; }
+  .lae-clients .lae-client img {
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    width: 100%;
+    margin: 0;
+    display: block; }
+  .lae-clients .lae-client .lae-client-name {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-top: -12px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    -webkit-transition: opacity .4s ease-in-out 0s;
+    transition: opacity .4s ease-in-out 0s;
+    opacity: 0; }
+    .lae-clients .lae-client .lae-client-name a {
+      color: #fff;
+      text-decoration: none; }
+  .lae-clients .lae-client .lae-image-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    -webkit-transition: opacity .4s ease-in-out 0s;
+    transition: opacity .4s ease-in-out 0s; }
+  .lae-clients .lae-client:hover .lae-image-overlay {
+    opacity: 0.7; }
+    .lae-dark-bg .lae-clients .lae-client:hover .lae-image-overlay {
+      opacity: 0.8; }
+  .lae-clients .lae-client:hover .lae-client-name {
+    opacity: 1; }
+
+/*# sourceMappingURL=clients.css.map */

@@ -1,0 +1,49 @@
+.congrats-screen {
+    width: 770px;
+    margin: 0 auto;
+
+    h1 {
+        grid-gap: 10px;
+    }
+
+    .middle-content {
+        top: 50%;
+    }
+
+    .video-showcase {
+        position: relative;
+    }
+
+    .youtube-btn {
+        cursor: pointer;
+    }
+    .click-btn-text {
+        position: absolute;
+        left: 13em;
+        top: 2.6em;
+    }
+
+    .tweet-import-success {
+        margin-top: 30px;
+        padding: 33px;
+        background: var(--st-background-light);
+        border: 1px solid var(--st-border-color);
+        text-align: left;
+        border-radius: var(--st-border-radius-4);
+
+        .twitter-btn-wrap {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: flex-end;
+            grid-gap: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .tweet-btn {
+            font-weight: var(--st-font-weight-bold);
+            font-size: var(--st-font-size-xs);
+            color: var(--st-color-accent);
+        }
+    }
+}

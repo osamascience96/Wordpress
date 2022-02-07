@@ -1,0 +1,30 @@
+.stc-suggestion-list {
+    border: 1px solid var( --stc-border-color );
+	font-size: var( --stc-font-size-xs );
+    line-height: var( --stc-font-line-height-xs );
+    color: var(--stc-border-color);
+	max-width: var( --stc-suggestion-list-max-width, 100% );
+    text-align: var( --stc-suggestion-list-text-align, left );
+	z-index: var( --stc-suggestion-list-z-index, 10 );
+    background: var( --stc-suggestion-list-background, var( --stc-color-white ) );
+	position: var( --stc-suggestion-list-position, relative );
+    left: var( --stc-suggestion-list-left, 0 );
+    right: var( --stc-suggestion-list-right, 0 );
+    border-radius: var( --stc-suggestion-list-border-radius, 0 );
+    padding: 0;
+    margin: 0;
+}
+
+.stc-suggession {
+	cursor: pointer;
+    padding: 9px 22px;
+    font-size: var( --stc-font-size-s );
+    color: rgb(75 85 99 / 50%);
+    &:hover {
+        background: var(--stc-background-light);
+    }
+}
+
+.stc-suggestion-highlight {
+    color: var(--stc-color-heading);
+}

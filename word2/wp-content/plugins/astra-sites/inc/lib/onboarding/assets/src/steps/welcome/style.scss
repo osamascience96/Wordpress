@@ -1,0 +1,32 @@
+.welcome-screen {
+    width: 770px;
+    margin: 0 auto;
+
+    h1 {
+        grid-gap: 10px;
+    }
+    .video-showcase {
+        position: relative;
+    }
+
+    .youtube-btn {
+        cursor: pointer;
+    }
+    .click-btn-text {
+        position: absolute;
+        left: 13em;
+        top: 2.6em;
+    }
+
+    .get-started-wrap {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .middle-content {
+        top: 50%;
+    }
+}
+

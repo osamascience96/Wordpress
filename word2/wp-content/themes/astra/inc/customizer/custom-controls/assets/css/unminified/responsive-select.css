@@ -1,0 +1,7 @@
+.ast-responsive-select-container {
+  display: none;
+}
+
+.ast-responsive-select-container.active {
+  display: block;
+}

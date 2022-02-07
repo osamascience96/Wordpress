@@ -1,0 +1,54 @@
+/*--------------------------------- Pie Charts -------------------------------------- */
+.lae-piecharts {
+  clear: both; }
+
+.lae-piechart {
+  position: relative;
+  text-align: center;
+  overflow: hidden; }
+  .lae-piechart canvas {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    margin: 0 auto; }
+  .lae-piechart .lae-label {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 55%;
+    max-width: 65%;
+    color: #888; }
+    .lae-dark-bg .lae-piechart .lae-label {
+      color: rgba(255, 255, 255, 0.7); }
+  .lae-piechart .lae-percentage span {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: #333;
+    font-weight: bolder; }
+    .lae-dark-bg .lae-piechart .lae-percentage span {
+      color: white; }
+  .lae-piechart .lae-percentage sup {
+    font-size: 18px;
+    vertical-align: middle; }
+  .lae-piechart.dark-bg .lae-label {
+    color: #fff; }
+  .lae-piechart.dark-bg .lae-percentage span {
+    color: #eee; }
+
+@media only screen and (max-width: 479px) {
+  .lae-piechart canvas {
+    margin-bottom: 15px; } }
+
+/*# sourceMappingURL=piecharts.css.map */

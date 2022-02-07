@@ -1,0 +1,40 @@
+/* ------------------------------------ Services ------------------------------------------- */
+/* -------- General services -------- */
+.lae-message-box-container {
+  -webkit-transition: height 0.25s cubic-bezier(0.06, 0.51, 0.48, 11);
+  transition: height 0.25s cubic-bezier(0.06, 0.51, 0.48, 11); }
+
+.lae-message-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px;
+  background: #d9edf7;
+  -webkit-transition: opacity .2s ease,visibility .2s ease;
+  transition: opacity .2s ease,visibility .2s ease; }
+  .lae-message-box.lae-hidden {
+    opacity: 0;
+    visibility: hidden; }
+  .lae-message-box .lae-icon-wrapper, .lae-message-box .lae-image-wrapper {
+    line-height: 1;
+    margin-right: 20px; }
+  .lae-message-box .lae-icon-wrapper i {
+    color: #748085;
+    font-size: 36px; }
+  .lae-message-box .lae-message-title {
+    margin: 0; }
+  .lae-message-box .lae-message-text {
+    margin: 0; }
+  .lae-message-box .lae-close-icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-transition: color .25s ease-in-out;
+    transition: color .25s ease-in-out; }
+    .lae-message-box .lae-close-icon i {
+      color: #697073;
+      font-size: 24px; }
+
+/*# sourceMappingURL=message-box.css.map */

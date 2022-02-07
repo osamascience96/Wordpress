@@ -1,0 +1,124 @@
+/* ======================================== Custom Styles ========================================= */
+/* --------------- Flexslider Styles -------------- */
+.lae-container .lae-thumbnailslider.lae-flexslider {
+  margin-top: 15px; }
+  .lae-container .lae-thumbnailslider.lae-flexslider .lae-slide {
+    margin: 0 5px 0 0; }
+    .lae-container .lae-thumbnailslider.lae-flexslider .lae-slide img {
+      display: block;
+      opacity: .5;
+      cursor: pointer; }
+      .lae-container .lae-thumbnailslider.lae-flexslider .lae-slide img:hover {
+        opacity: 1; }
+    .lae-container .lae-thumbnailslider.lae-flexslider .lae-slide.lae-flex-active-slide img {
+      opacity: 1;
+      cursor: default; }
+.lae-container .lae-flex-direction-nav {
+  padding: 0;
+  margin: 0; }
+.lae-container .lae-flex-direction-nav li {
+  position: initial; }
+.lae-container .lae-flex-direction-nav a, .lae-container .lae-flex-direction-nav a:hover {
+  opacity: 1;
+  text-shadow: none;
+  background: none;
+  color: #888;
+  font-family: 'lae-icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
+  width: 28px;
+  height: 28px;
+  margin: -14px 0 0;
+  bottom: initial;
+  left: initial;
+  right: initial;
+  top: 50%;
+  text-indent: 0;
+  text-align: center;
+  color: #aaa;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  outline: none; }
+  .rtl .lae-container .lae-flex-direction-nav a, .rtl .lae-container .lae-flex-direction-nav a:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    direction: ltr; }
+  .lae-container .lae-flex-direction-nav a:before, .lae-container .lae-flex-direction-nav a:hover:before {
+    margin: 2px;
+    vertical-align: middle;
+    display: inline;
+    font-family: inherit;
+    opacity: 1; }
+  .lae-dark-bg .lae-container .lae-flex-direction-nav a, .lae-dark-bg .lae-container .lae-flex-direction-nav a:hover {
+    color: #888; }
+    .lae-dark-bg .lae-container .lae-flex-direction-nav a:hover, .lae-dark-bg .lae-container .lae-flex-direction-nav a:hover:hover {
+      color: #aaa; }
+  @media only screen and (max-width: 960px) {
+    .lae-container .lae-flex-direction-nav a, .lae-container .lae-flex-direction-nav a:hover {
+      display: none;
+      /* Let users navigate via touch */ } }
+.lae-container .lae-flex-direction-nav a.lae-flex-prev {
+  left: -30px; }
+  .lae-container .lae-flex-direction-nav a.lae-flex-prev:before {
+    content: "\e904"; }
+.lae-container .lae-flex-direction-nav a.lae-flex-next {
+  right: -30px; }
+  .lae-container .lae-flex-direction-nav a.lae-flex-next:before {
+    content: "\e905"; }
+.lae-container .lae-flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+  padding: 0;
+  margin: 0; }
+  .lae-container .lae-flex-control-nav li, .lae-container .lae-flex-control-nav li:hover {
+    margin: 0 8px 0 0;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .lae-container .lae-flex-control-nav li a, .lae-container .lae-flex-control-nav li a:hover {
+    background: #aaa;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: all 0.2s ease-in 0s;
+    transition: all 0.2s ease-in 0s;
+    display: inline-block;
+    vertical-align: middle;
+    outline: none; }
+    .lae-dark-bg .lae-container .lae-flex-control-nav li a, .lae-dark-bg .lae-container .lae-flex-control-nav li a:hover {
+      background: #ccc;
+      border-color: #ccc; }
+  .lae-container .lae-flex-control-nav li a.lae-flex-active, .lae-container .lae-flex-control-nav li a:hover.lae-flex-active, .lae-container .lae-flex-control-nav li a:hover {
+    background: none; }
+  .lae-container .lae-flex-control-nav li a.lae-flex-active, .lae-container .lae-flex-control-nav li a:hover.lae-flex-active {
+    width: 14px;
+    height: 14px; }
+.lae-container .lae-flex-control-thumbs {
+  bottom: -120px; }
+  @media only screen and (max-width: 600px) {
+    .lae-container .lae-flex-control-thumbs {
+      bottom: -80px; } }
+  .lae-container .lae-flex-control-thumbs li {
+    width: auto;
+    float: none; }
+    .lae-container .lae-flex-control-thumbs li img {
+      max-width: 100%;
+      width: 150px; }
+      @media only screen and (max-width: 600px) {
+        .lae-container .lae-flex-control-thumbs li img {
+          width: 100px; } }
+
+/*# sourceMappingURL=flexslider-custom.css.map */

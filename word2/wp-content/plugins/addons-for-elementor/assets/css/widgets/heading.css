@@ -1,0 +1,28 @@
+/* ---------------------------------- Heading ---------------------------------- */
+.lae-heading.lae-style3 {
+  margin: 0 auto 30px; }
+  .lae-heading.lae-style3 .lae-title {
+    font-size: 22px;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+    .lae-heading.lae-style3 .lae-title:after {
+      width: 35px;
+      height: 1px;
+      background: #aaa;
+      display: block;
+      content: ""; }
+    .lae-heading.lae-style3 .lae-title:after {
+      margin: 10px auto 20px; }
+      .lae-dark-bg .lae-heading.lae-style3 .lae-title:after {
+        background: rgba(255, 255, 255, 0.5); }
+    @media only screen and (max-width: 767px) {
+      .lae-heading.lae-style3 .lae-title {
+        font-size: 16px;
+        line-height: 24px; } }
+  .lae-heading.lae-style3.lae-alignleft, .lae-heading.lae-style3.lae-alignright {
+    margin: 0 0 30px; }
+    .lae-heading.lae-style3.lae-alignleft .lae-title:after, .lae-heading.lae-style3.lae-alignright .lae-title:after {
+      margin: 10px 0 20px; }
+
+/*# sourceMappingURL=heading.css.map */

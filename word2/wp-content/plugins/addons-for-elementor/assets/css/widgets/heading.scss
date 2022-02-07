@@ -1,0 +1,37 @@
+
+@import "../lae-lib";
+
+/* ---------------------------------- Heading ---------------------------------- */
+
+.lae-heading.lae-style3 {
+  margin: 0 auto 30px;
+
+  .lae-title {
+    font-size: 22px;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    @include bottom-line(35, 1, #aaa);
+
+    &:after {
+      margin: 10px auto 20px;
+
+      .lae-dark-bg & {
+        background: $dark-bg-meta-text;
+      }
+    }
+
+    @include respond-to-max(767) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &.lae-alignleft, &.lae-alignright {
+    margin: 0 0 30px;
+
+    .lae-title:after {
+      margin: 10px 0 20px;
+    }
+  }
+}

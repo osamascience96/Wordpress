@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "name": "Theme Color 1",
+          "slug": "ast-global-color-0",
+          "color": "var(--ast-global-color-0)"
+        },
+        {
+          "name": "Theme Color 2",
+          "slug": "ast-global-color-1",
+          "color": "var(--ast-global-color-1)"
+        },
+        {
+          "name": "Theme Color 3",
+          "slug": "ast-global-color-2",
+          "color": "var(--ast-global-color-2)"
+        },
+        {
+          "name": "Theme Color 4",
+          "slug": "ast-global-color-3",
+          "color": "var(--ast-global-color-3)"
+        },
+        {
+          "name": "Theme Color 5",
+          "slug": "ast-global-color-4",
+          "color": "var(--ast-global-color-4)"
+        },
+        {
+          "name": "Theme Color 6",
+          "slug": "ast-global-color-5",
+          "color": "var(--ast-global-color-5)"
+        },
+        {
+          "name": "Theme Color 7",
+          "slug": "ast-global-color-6",
+          "color": "var(--ast-global-color-6)"
+        },
+        {
+          "name": "Theme Color 8",
+          "slug": "ast-global-color-7",
+          "color": "var(--ast-global-color-7)"
+        },
+        {
+          "name": "Theme Color 9",
+          "slug": "ast-global-color-8",
+          "color": "var(--ast-global-color-8)"
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "var(--ast-content-width-size)",
+      "wideSize": "1200px",
+      "fullSize": "none"
+    }
+  }
+}

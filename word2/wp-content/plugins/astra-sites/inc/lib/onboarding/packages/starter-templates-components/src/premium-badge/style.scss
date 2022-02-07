@@ -1,0 +1,14 @@
+.stc-grid-item-badge {
+	background: #FFC107;
+	color: #000;
+	padding: 4px 12px;
+	font-size: var( --stc-font-size-xxs );
+	top: -4px;
+	right: -4px;
+	text-transform: uppercase;
+    position: absolute;
+    z-index: 1;
+    border-radius: var(--stc-border-radius-2);
+    font-weight: var(--stc-font-weight-extra-bold);
+    letter-spacing: 0.3px;
+}

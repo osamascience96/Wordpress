@@ -1,0 +1,149 @@
+/* ================================= Custom Slick Styles ===================================== */
+
+/* Sleek Carousel Styles */
+
+
+@import "lae-lib";
+
+.slick-loading .slick-list {
+  background: #fff url('./loader.gif') center center no-repeat;
+}
+
+@include respond-to-max(1024) {
+  .slick-slider {
+    padding: 0 10px;
+  }
+}
+
+.lae-container {
+
+  .slick-prev, .slick-next {
+    position: absolute;
+    bottom: initial;
+    left: initial;
+    right: initial;
+    top: 50%;
+    width: 28px;
+    height: 28px;
+    margin: -14px 0 0;
+
+    .rtl & {
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      direction: ltr;
+    }
+
+    &, &:before, &:after {
+      text-shadow: none;
+      background: none;
+      border: none;
+      padding: 0;
+      opacity: 1;
+      @include lae-icon-font();
+      font-size: 24px;
+      color: #aaa;
+      overflow: hidden;
+      box-shadow: none;
+      outline: none;
+      text-indent: 0;
+      text-align: center;
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    &:before {
+      margin: 2px;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      &:before, &:after {
+        color: #888;
+      }
+    }
+
+    .lae-dark-bg & {
+      &:before, &:after {
+        color: #888;
+      }
+
+      &:hover {
+        &:before, &:after {
+          color: #aaa;
+          background: none;
+        }
+      }
+    }
+  }
+
+  .slick-prev {
+    left: -40px;
+
+    &:before {
+      content: "\e904";
+    }
+
+    @include respond-to-max(1024) {
+      left: -10px;
+    }
+  }
+
+  .slick-next {
+    right: -40px;
+
+    &:before {
+      content: "\e905";
+    }
+
+    @include respond-to-max(1024) {
+      right: -10px;
+    }
+  }
+
+  ul.slick-dots {
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin: 0 8px 0 0;
+      padding: 0;
+      display: inline-block;
+      font-size: 0;
+    }
+
+    li button {
+      padding: 0;
+      background: #aaa;
+      border: 1px solid #aaa;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      box-shadow: none;
+      transition: background 0.3s ease-in-out 0s;
+      font-size: 0;
+      outline: none;
+
+      &:before {
+        display: none;
+      }
+
+      .lae-dark-bg & {
+        background: #888;
+        border-color: #888;
+      }
+    }
+
+    li button:hover, li.slick-active button {
+      background: none;
+      border-color: #aaa;
+    }
+
+    li.slick-active button {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}

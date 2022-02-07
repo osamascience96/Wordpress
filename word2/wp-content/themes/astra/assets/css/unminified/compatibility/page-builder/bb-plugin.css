@@ -1,0 +1,20 @@
+/**
+ * Astra Theme compatibility with Beaver Builder
+ */
+.fl-builder-content {
+  clear: both;
+}
+
+.fl-theme-builder-archive .fl-post-gallery-post.hentry,
+.fl-theme-builder-archive .fl-post-column > .hentry {
+  margin: 0;
+}
+
+.fl-theme-builder-archive h2.fl-post-feed-title {
+  clear: initial;
+}
+
+.ast-fluid-width-layout .fl-row-fixed-width .fl-row-fixed-width {
+  padding-left: 0;
+  padding-right: 0;
+}

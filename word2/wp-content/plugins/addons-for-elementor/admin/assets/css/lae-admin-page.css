@@ -1,0 +1,378 @@
+/* ================= Wrapper DIVs ============================== */
+#wpbody-content .lae-wrap {
+  position: relative;
+  display: block;
+  padding-right: 20px; }
+
+#lae-buttons-wrap {
+  float: right; }
+  .rtl #lae-buttons-wrap {
+    float: left; }
+
+#lae-buttons-wrap .lae-button .dashicons {
+  line-height: 27px; }
+
+#lae-buttons-wrap a:last-child {
+  margin-right: 22px; }
+  .rtl #lae-buttons-wrap a:last-child {
+    margin: 0 0 0 22px; }
+
+/* =============== Banner ======================= */
+#lae-banner-wrap {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 18px 1px 1px 1px;
+  min-height: 80px;
+  line-height: 80px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
+
+#lae-banner {
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  min-height: 80px;
+  line-height: 80px;
+  white-space: nowrap;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1); }
+
+#lae-banner h2 {
+  min-height: 80px;
+  margin: 0;
+  padding: 0;
+  line-height: 80px;
+  white-space: nowrap;
+  float: left;
+  color: #34495e;
+  font-weight: 500;
+  font-size: 20px; }
+  .rtl #lae-banner h2 {
+    float: right; }
+
+#lae-banner h2 span {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  padding: 0 20px;
+  margin: 0 20px 0 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  height: 80px;
+  background: #333743;
+  color: #fff;
+  text-align: center;
+  background-image: url("../images/logo-dark.png");
+  background-size: 93%;
+  background-position: 6px 48%;
+  background-repeat: no-repeat;
+  text-indent: -9999px; }
+  .rtl #lae-banner h2 span {
+    margin: 0 0 0 20px; }
+
+#lae-banner.lae-fixed {
+  position: fixed;
+  top: 32px;
+  z-index: 999; }
+
+/* ========================= Buttons ============================= */
+.lae-button {
+  position: relative;
+  overflow: hidden;
+  padding: 4px 15px;
+  margin: 2px 5px 2px 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  outline: none;
+  opacity: 0.9;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+  .lae-button:hover {
+    color: #ffffff; }
+  .rtl .lae-button {
+    margin: 2px 0 2px 5px; }
+
+#lae-banner-wrap .lae-button {
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 1; }
+
+.lae-button:hover {
+  opacity: 1; }
+
+.lae-close-infobox,
+#lae_settings_save {
+  background: #4ECDC4; }
+
+.lae-close-infobox {
+  display: inline-block;
+  margin: 20px 0 11px 0;
+  padding: 4px 15px; }
+
+#lae_clear_cache {
+  margin: 0 0 0 18px !important; }
+
+#lae_settings_reset,
+#lae_clear_cache {
+  background: #e74c3c; }
+
+.lae-button .dashicons {
+  position: relative;
+  font-size: 15px;
+  line-height: 26px;
+  margin: 0 2px 0 -4px; }
+  .rtl .lae-button .dashicons {
+    margin: 0 -4px 0 2px; }
+
+.lae-button:hover .dashicons {
+  -webkit-animation: toTopFromBottom 0.3s forwards;
+  animation: toTopFromBottom 0.3s forwards; }
+
+@-webkit-keyframes toTopFromBottom {
+  49% {
+    -webkit-transform: translate3d(0, -100%, 0); }
+  50% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0); }
+  51% {
+    opacity: 1; } }
+@keyframes toTopFromBottom {
+  49% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0); }
+  50% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0); }
+  51% {
+    opacity: 1; } }
+/* ============== INFO BOX ============================= */
+#lae-infobox {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+#lae-infobox.lae-infobox-loading {
+  opacity: 1;
+  visibility: visible; }
+
+.lae-info-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  opacity: 0.86; }
+
+.lae-info-inner {
+  position: absolute;
+  display: block;
+  top: 50%;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  line-height: 0;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.lae-infobox-msg {
+  position: relative;
+  display: inline-block;
+  min-width: 245px;
+  padding: 20px 50px;
+  background: #34495e;
+  text-align: center;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateY(-60px);
+  transform: translateY(-60px);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+.lae-infobox-loading .lae-infobox-msg {
+  -webkit-transform: translateY(0);
+  transform: translateY(0); }
+
+.lae-infobox-msg strong {
+  position: relative;
+  display: inline-block;
+  padding: 20px 0;
+  font-size: 16px;
+  text-transform: uppercase; }
+
+#lae-infobox-confirm {
+  display: none !important; }
+
+.lae-infobox-icon {
+  font-size: 24px;
+  margin: 0 10px 0 0; }
+
+.lae-infobox-msg .dashicons-yes {
+  color: #4ECDC4; }
+
+.lae-infobox-msg .dashicons-no-alt {
+  color: #e74c3c; }
+
+.lae-infobox-msg .lae-infobox-alt {
+  color: #e74c3c; }
+
+.lae-close-infobox .dashicons {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900; }
+
+.lae-infobox-msg .dashicons-admin-generic {
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 1500ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 1500ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 1500ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+.lae-infobox-msg .dashicons-admin-generic:before {
+  content: "\f111";
+  text-align: center;
+  display: block;
+  position: relative;
+  height: 22px;
+  width: 22px;
+  top: -3px;
+  left: -1px; }
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+/* ===================== BOX WRAPPER ====================== */
+.settings-options .lae-inner {
+  margin: 1px 0 0 0; }
+
+.lae-settings .lae-tabs-wrap {
+  margin: 0; }
+
+.lae-settings .lae-box-side {
+  background: #333743; }
+
+.lae-settings .lae-box-side * {
+  color: #e8e9ef; }
+
+.lae-box-side {
+  display: table-cell;
+  vertical-align: top;
+  min-width: 150px;
+  background: #e1e1e1; }
+
+.lae-settings .lae-box-side {
+  border-bottom: 1px solid #bcbfc7; }
+
+.lae-box-side h3 {
+  margin: 0;
+  padding: 15px 12px 15px 12px !important;
+  font-size: 13px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background: #404554; }
+
+.lae-box-side .lae-infobox-icon {
+  padding: 15px 12px 15px 12px !important;
+  font-size: 32px; }
+
+.lae-box-inner {
+  display: table-cell;
+  margin: 0px !important;
+  padding: 8px 20px 40px 20px !important;
+  vertical-align: top;
+  width: 100%;
+  background: #fff; }
+
+.lae-settings .lae-box-inner {
+  border-top: 1px solid #e1e1e1; }
+
+.lae-settings .lae-box-inner {
+  padding: 0 0 40px 0 !important; }
+
+.lae-box-inner p {
+  color: #888;
+  font-style: normal;
+  max-width: 650px; }
+
+.lae-box-inner h3 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  font-size: 13px;
+  line-height: 20px; }
+
+.lae-label-outside {
+  padding: 0 0 0 18px; }
+
+.lae-settings .lae-toggle {
+  position: relative;
+  display: inline-block;
+  top: 5px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
+
+.lae-settings .lae-type-checkbox .lae-number-label {
+  top: 5px; }
+
+.lae-settings .lae-desc {
+  font-size: 13px;
+  line-height: 20px;
+  max-width: 650px; }
+
+.lae-box-inner ul {
+  list-style: inherit;
+  list-style-type: square; }
+.lae-box-inner li {
+  margin: 0 0 10px 20px;
+  color: #888;
+  max-width: 600px;
+  line-height: 1.4em; }
+.lae-box-inner li strong {
+  color: #444; }
+.lae-box-inner .lae-button.purchase, .lae-box-inner .lae-button.know-more {
+  background: #46a5d5;
+  padding: 12px 30px; }
+
+/*# sourceMappingURL=lae-admin-page.css.map */

@@ -1,0 +1,166 @@
+/* ======================================== Custom Styles ========================================= */
+
+/* --------------- Flexslider Styles -------------- */
+
+
+@import "lae-lib";
+
+.lae-container {
+  .lae-thumbnailslider.lae-flexslider {
+    margin-top: 15px;
+
+    .lae-slide {
+      margin: 0 5px 0 0;
+
+      img {
+        display: block;
+        opacity: .5;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      &.lae-flex-active-slide img {
+        opacity: 1;
+        cursor: default;
+      }
+    }
+  }
+
+  .lae-flex-direction-nav {
+    padding: 0;
+    margin: 0;
+  }
+
+  .lae-flex-direction-nav li {
+    position: initial;
+  }
+
+  .lae-flex-direction-nav a, .lae-flex-direction-nav a:hover {
+    opacity: 1;
+    text-shadow: none;
+    background: none;
+    color: #888;
+    @include lae-icon-font();
+    font-size: 24px;
+    width: 28px;
+    height: 28px;
+    margin: -14px 0 0;
+    bottom: initial;
+    left: initial;
+    right: initial;
+    top: 50%;
+    text-indent: 0;
+    text-align: center;
+    color: #aaa;
+    transition: all 0.3s ease-in-out 0s;
+    outline: none;
+
+    .rtl & {
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      direction: ltr;
+    }
+
+    &:before {
+      margin: 2px;
+      vertical-align: middle;
+      display: inline;
+      font-family: inherit;
+      opacity: 1;
+    }
+
+    .lae-dark-bg & {
+      color: #888;
+
+      &:hover {
+        color: #aaa;
+      }
+    }
+
+    @include respond-to-max(960) {
+      display: none; /* Let users navigate via touch */
+    }
+  }
+
+  .lae-flex-direction-nav a.lae-flex-prev {
+    left: -30px;
+
+    &:before {
+      content: "\e904";
+    }
+  }
+
+  .lae-flex-direction-nav a.lae-flex-next {
+    right: -30px;
+
+    &:before {
+      content: "\e905";
+    }
+  }
+
+  .lae-flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: -40px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+    li, li:hover {
+      margin: 0 8px 0 0;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+    }
+
+    li a, li a:hover {
+      background: #aaa;
+      border: 1px solid #aaa;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      box-shadow: none;
+      transition: all 0.2s ease-in 0s;
+      display: inline-block;
+      vertical-align: middle;
+      outline: none;
+
+      .lae-dark-bg & {
+        background: #ccc;
+        border-color: #ccc;
+      }
+    }
+
+    li a.lae-flex-active, li a:hover.lae-flex-active, li a:hover {
+      background: none;
+    }
+
+    li a.lae-flex-active, li a:hover.lae-flex-active {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  .lae-flex-control-thumbs {
+    bottom: -120px;
+    @include respond-to-max(600) {
+      bottom: -80px;
+    }
+
+    li {
+      width: auto;
+      float: none;
+
+      img {
+        max-width: 100%;
+        width: 150px;
+        @include respond-to-max(600) {
+          width: 100px;
+        }
+      }
+    }
+  }
+}

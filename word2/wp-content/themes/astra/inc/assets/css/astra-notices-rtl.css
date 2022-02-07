@@ -1,0 +1,86 @@
+.astra-review-notice-container {
+	display: flex;
+	align-items: center;
+	padding-top: 10px;
+}
+
+.astra-review-notice-container .dashicons {
+    font-size: 1.4em;
+	padding-right: 10px;
+}
+
+.astra-review-notice-container a {
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.astra-review-notice-container .dashicons:first-child {
+    padding-right: 0;
+}
+
+.notice-image img {
+    max-width: 90px;
+}
+
+.notice-content .notice-heading {
+    padding-bottom: 5px;
+}
+
+.notice-content {
+    margin-right: 15px;
+}
+
+.notice-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#astra-sites-on-active .notice-image img {
+    max-width: 60px;
+    margin-right: 5px;
+}
+
+#astra-sites-on-active .notice-content .notice-heading {
+    margin: 0 0 8px;
+    padding: 0;
+    font-weight: bolder;
+    font-size: 1.3em;
+    color: #2e4453;
+}
+
+#astra-sites-on-active .notice-content p {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+#astra-sites-on-active .notice-container {
+    padding: 18px 0 18px;
+    align-items: start;
+}
+
+#astra-sites-on-active .button.button-hero {
+    font-size: 13px;
+    min-height: 30px;
+    line-height: 26px;
+    padding: 0 12px;
+    height: 30px;
+}
+
+#astra-sites-on-active .astra-review-notice-container {
+    padding-top: 5px;
+}
+
+#astra-sites-on-active .button-primary {
+    box-shadow: 0 1px 0 #006799;
+}
+
+#astra-sites-on-active .button.updating-message:before,
+#astra-sites-on-active .button.updated-message:before,
+#astra-sites-on-active .button.installed:before,
+#astra-sites-on-active .button.installing:before {
+	margin: 4px -1px 0px 5px;
+}

@@ -1,0 +1,35 @@
+.ist-error-message-wrap {
+    h2.ist-error-message-title {
+        margin-bottom: 30px;
+    }
+}
+.ist-import-error {
+    p {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        justify-content: flex-start;
+        margin: 0;
+    }
+    .ist-import-error-box {
+        width: 100%;
+        border: 1px solid var(--st-border-color);
+        box-sizing: border-box;
+        border-radius: var(--st-border-radius-4);
+        justify-content: center;
+        margin: 25px auto;
+        padding: 17px 20px;
+        background: var(--st-background-light);
+    }
+    .ist-import-error-solution {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: start;
+        gap: 8px;
+        display: block;
+    }
+    pre {
+        text-align: left;
+        padding: 10px 0;
+    }
+}

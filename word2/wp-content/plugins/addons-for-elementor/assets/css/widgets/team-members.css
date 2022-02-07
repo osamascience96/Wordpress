@@ -1,0 +1,176 @@
+/* --------------------------------- Team Members --------------------------------------- */
+.lae-team-members {
+  clear: both; }
+  .lae-team-members .lae-team-member .lae-social-list {
+    margin-top: 20px; }
+    .lae-team-members .lae-team-member .lae-social-list .lae-social-list-item {
+      display: inline;
+      margin: 0 15px 0 0; }
+      .lae-team-members .lae-team-member .lae-social-list .lae-social-list-item i {
+        color: #999;
+        -webkit-transition: color .3s ease-in-out 0s;
+        transition: color .3s ease-in-out 0s; }
+        .lae-team-members .lae-team-member .lae-social-list .lae-social-list-item i:hover {
+          color: #666; }
+  .lae-team-members .lae-team-member .lae-team-member-details {
+    font-size: 15px;
+    line-height: 24px; }
+  .lae-team-members .lae-team-member .lae-team-member-text .lae-title {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    clear: none;
+    margin-top: 0;
+    margin-bottom: 10px; }
+  .lae-team-members .lae-team-member .lae-team-member-text .lae-title-link .lae-title {
+    -webkit-transition: color .4s ease-in-out 0s;
+    transition: color .4s ease-in-out 0s; }
+  .lae-team-members .lae-team-member .lae-team-member-text .lae-title-link:hover .lae-title {
+    color: #666; }
+  .lae-team-members .lae-team-member .lae-team-member-text .lae-team-member-position {
+    font-size: 15px;
+    line-height: 24px;
+    font-style: italic;
+    color: #888;
+    margin-bottom: 10px; }
+
+/*-------- Style 1 ----------------*/
+.lae-team-members-style1 .lae-team-member {
+  max-width: 320px;
+  margin: 0 auto; }
+  .lae-team-members-style1 .lae-team-member .lae-image-wrapper {
+    text-align: center;
+    position: relative; }
+    .lae-team-members-style1 .lae-team-member .lae-image-wrapper img {
+      max-width: 100%;
+      margin: 0 auto 30px;
+      border-radius: 50%;
+      -webkit-transition: all .3s ease-in-out 0s;
+      transition: all .3s ease-in-out 0s; }
+    .lae-team-members-style1 .lae-team-member .lae-image-wrapper .lae-social-list {
+      position: absolute;
+      width: 100%;
+      top: 40%;
+      z-index: 2; }
+      @media only screen and (max-width: 767px) {
+        .lae-team-members-style1 .lae-team-member .lae-image-wrapper .lae-social-list {
+          position: relative;
+          top: 0; } }
+      .lae-team-members-style1 .lae-team-member .lae-image-wrapper .lae-social-list i {
+        font-size: 26px;
+        color: #fff;
+        opacity: 0;
+        -webkit-transition: all .3s ease-in-out 0s;
+        transition: all .3s ease-in-out 0s; }
+        .lae-team-members-style1 .lae-team-member .lae-image-wrapper .lae-social-list i:hover {
+          color: #ccc; }
+        @media only screen and (max-width: 767px) {
+          .lae-team-members-style1 .lae-team-member .lae-image-wrapper .lae-social-list i {
+            color: #999;
+            opacity: 1; }
+            .lae-dark-bg .lae-team-members-style1 .lae-team-member .lae-image-wrapper .lae-social-list i {
+              color: #888; }
+            .lae-team-members-style1 .lae-team-member .lae-image-wrapper .lae-social-list i:hover {
+              color: #666; }
+              .lae-dark-bg .lae-team-members-style1 .lae-team-member .lae-image-wrapper .lae-social-list i:hover {
+                color: #ccc; } }
+  .lae-team-members-style1 .lae-team-member:hover .lae-image-wrapper img {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%); }
+    @media only screen and (max-width: 767px) {
+      .lae-team-members-style1 .lae-team-member:hover .lae-image-wrapper img {
+        -webkit-filter: brightness(80%);
+                filter: brightness(80%); } }
+  .lae-team-members-style1 .lae-team-member:hover .lae-image-wrapper .lae-social-list i {
+    opacity: 1; }
+  .lae-team-members-style1 .lae-team-member .lae-team-member-text {
+    text-align: center;
+    max-width: 650px; }
+    .lae-team-members-style1 .lae-team-member .lae-team-member-text .lae-title {
+      margin-bottom: 10px; }
+  .lae-team-members-style1 .lae-team-member .lae-social-list {
+    margin: 10px auto; }
+
+/*-------- Style 2 ----------------*/
+.lae-team-members-style2 {
+  position: relative;
+  max-width: 960px; }
+  .lae-team-members-style2 .lae-team-member-wrapper {
+    margin-top: 75px; }
+    .lae-team-members-style2 .lae-team-member-wrapper .lae-team-member {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .lae-team-members-style2 .lae-team-member-wrapper .lae-team-member .lae-image-wrapper {
+        text-align: center;
+        position: relative; }
+        .lae-team-members-style2 .lae-team-member-wrapper .lae-team-member .lae-image-wrapper img {
+          max-width: 320px;
+          margin: 0 auto 20px;
+          border-radius: 50%;
+          -webkit-transition: all .3s ease-in-out 0s;
+          transition: all .3s ease-in-out 0s; }
+      .lae-team-members-style2 .lae-team-member-wrapper .lae-team-member .lae-team-member-text {
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .lae-team-members-style2 .lae-team-member-wrapper {
+        margin-top: 100px; }
+        .lae-team-members-style2 .lae-team-member-wrapper .lae-team-member {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row; }
+          .lae-team-members-style2 .lae-team-member-wrapper .lae-team-member .lae-team-member-text {
+            max-width: 100%; }
+        .lae-team-members-style2 .lae-team-member-wrapper:nth-child(odd) .lae-image-wrapper {
+          margin-right: 50px;
+          -webkit-box-ordinal-group: 1;
+              -ms-flex-order: 0;
+                  order: 0; }
+        .lae-team-members-style2 .lae-team-member-wrapper:nth-child(odd) .lae-team-member-text {
+          text-align: left; }
+        .lae-team-members-style2 .lae-team-member-wrapper:nth-child(even) .lae-image-wrapper {
+          margin-left: 50px;
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1; }
+        .lae-team-members-style2 .lae-team-member-wrapper:nth-child(even) .lae-team-member-text {
+          text-align: right; } }
+    .lae-team-members-style2 .lae-team-member-wrapper:first-child {
+      margin-top: 0; }
+    .lae-team-members-style2 .lae-team-member-wrapper .lae-team-member-text .lae-title {
+      margin-bottom: 5px; }
+    .lae-team-members-style2 .lae-team-member-wrapper .lae-team-member-text .lae-team-member-details {
+      margin: 10px 0 10px; }
+    .lae-team-members-style2 .lae-team-member-wrapper .lae-team-member-text .lae-social-list i {
+      font-size: 24px; }
+    .lae-team-members-style2 .lae-team-member-wrapper:hover .lae-image-wrapper img {
+      -webkit-filter: brightness(80%);
+              filter: brightness(80%); }
+
+.lae-dark-bg .lae-team-members .lae-team-member .lae-team-member-details {
+  color: rgba(255, 255, 255, 0.7); }
+.lae-dark-bg .lae-team-members .lae-team-member .lae-team-member-text .lae-title, .lae-dark-bg .lae-team-members .lae-team-member .lae-team-member-text .lae-title-link .lae-title {
+  color: white; }
+.lae-dark-bg .lae-team-members .lae-team-member .lae-team-member-text .lae-title-link:hover .lae-title {
+  color: rgba(255, 255, 255, 0.7); }
+.lae-dark-bg .lae-team-members .lae-team-member .lae-team-member-text .lae-team-member-position {
+  color: rgba(255, 255, 255, 0.5); }
+.lae-dark-bg .lae-team-members .lae-team-member .lae-team-member-text .lae-social-list i {
+  color: #aaa; }
+  .lae-dark-bg .lae-team-members .lae-team-member .lae-team-member-text .lae-social-list i:hover {
+    color: #ccc; }
+
+/*# sourceMappingURL=team-members.css.map */

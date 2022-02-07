@@ -1,0 +1,28 @@
+// Core CSS.
+@import url('../style.scss');
+
+.stc-button {
+    margin: 0;
+    padding: 0 10px;
+    cursor: pointer;
+    border-width: 1px;
+    white-space: nowrap;
+    border-style: solid;
+    text-decoration: none;
+    display: inline-block;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+	color: var( --stc-color-white );
+    font-size: var( --stc-font-size-xs );
+	border-color: var( --stc-color-accent  );
+    min-height: var( --stc-font-line-height-l );
+    border-radius: var( --stc-border-radius-3 );
+	background-color: var( --stc-color-accent  );
+
+	&:hover,
+	&:focus {
+		border-color: var( --stc-color-accent-hover  );
+		background-color: var( --stc-color-accent-hover );
+	}
+
+}

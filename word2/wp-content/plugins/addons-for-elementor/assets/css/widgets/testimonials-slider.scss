@@ -1,0 +1,138 @@
+
+@import "../lae-lib";
+
+/* ------------------------------ Testimonials Slider ------------------------------------- */
+
+
+
+.lae-testimonials-slider {
+  clear: both;
+  position: relative;
+
+  &.lae-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .lae-testimonial {
+
+    .lae-testimonial-star-rating {
+      padding: 0;
+      margin: 0 0 10px 0;
+
+      .lae-testimonial-star-rating-item {
+        display: inline-block;
+
+        svg {
+          fill: #d8d8d8;
+        }
+      }
+    }
+
+    &.lae-rating-five .lae-testimonial-star-rating .lae-testimonial-star-rating-item {
+      svg {
+        fill: #f2b01e;
+      }
+    }
+
+    &.lae-rating-one .lae-testimonial-star-rating .lae-testimonial-star-rating-item {
+      &:first-child {
+        svg {
+          fill: #f2b01e;
+        }
+      }
+    }
+
+    &.lae-rating-two .lae-testimonial-star-rating .lae-testimonial-star-rating-item {
+      &:nth-child(1), &:nth-child(2) {
+        svg {
+          fill: #f2b01e;
+        }
+      }
+    }
+
+    &.lae-rating-three .lae-testimonial-star-rating .lae-testimonial-star-rating-item {
+      &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+        svg {
+          fill: #f2b01e;
+        }
+      }
+    }
+
+    &.lae-rating-four .lae-testimonial-star-rating .lae-testimonial-star-rating-item {
+      &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+        svg {
+          fill: #f2b01e;
+        }
+      }
+    }
+
+    .lae-testimonial-text {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 40px;
+      font-size: 18px;
+      line-height: 32px;
+      font-style: italic;
+      color: #666;
+
+      .lae-dark-bg & {
+        color: #ccc;
+      }
+
+      i {
+        color: #ccc;
+        font-size: 32px;
+        display: block;
+        margin-bottom: 35px;
+        background: none;
+        width: auto;
+        height: auto;
+
+        .lae-dark-bg & {
+          color: #ddd;
+        }
+      }
+    }
+
+    .lae-testimonial-user {
+      display: table;
+      margin: 0 auto;
+
+      .lae-image-wrapper {
+        display: table-cell;
+
+        img {
+          max-width: 64px;
+          border-radius: 50%;
+          margin-right: 15px;
+
+          .rtl & {
+            margin: 0 0 0 15px;
+          }
+        }
+      }
+
+      .lae-user-text {
+        display: table-cell;
+        vertical-align: middle;
+        color: #888;
+
+        .lae-dark-bg & {
+          color: #909090;
+        }
+
+        .lae-author-name {
+          @include lae-heading-style();
+          font-size: 15px;
+          line-height: 24px;
+          margin-bottom: 5px;
+
+          .lae-dark-bg & {
+            color: #e5e5e5;
+          }
+        }
+      }
+    }
+  }
+}

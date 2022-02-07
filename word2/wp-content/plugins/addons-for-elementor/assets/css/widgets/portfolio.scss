@@ -1,0 +1,356 @@
+
+@import "../lae-lib";
+
+/* ---------------------------------- Portfolio/Posts Grid Free Version ---------------------------------- */
+
+.lae-portfolio-wrap {
+  clear: both;
+  overflow: hidden;
+
+  .lae-portfolio-header {
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    clear: both;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    &.lae-no-heading {
+      justify-content: center;
+    }
+
+    @include respond-to-max(800) {
+      flex-flow: column wrap;
+      justify-content: flex-start;
+    }
+  }
+
+  .lae-heading {
+    display: inline-block;
+    text-align: left;
+    max-width: none;
+    font-size: 32px;
+    line-height: 44px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    margin: 0 100px 0 0;
+
+    .rtl & {
+      margin: 0 0 0 100px;
+    }
+
+    .lae-dark-bg & {
+      color: #e5e5e5;
+    }
+
+    @include respond-to-max(800) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .lae-taxonomy-filter {
+    display: block;
+    margin: 0;
+    padding: 0;
+    @include align-self(center);
+    @include respond-to-max(800) {
+      @include align-self(flex-start);
+    }
+
+    .lae-filter-item {
+      position: relative;
+      display: inline-block;
+      margin: 0 0 15px 0;
+      padding: 0;
+      font-style: normal;
+      border-bottom: 1px solid #ddd;
+
+      .lae-dark-bg & {
+        border-color: #444;
+      }
+
+      a {
+        font-size: 15px;
+        line-height: 24px;
+        transition: all .4s ease-in-out 0s;
+        display: block;
+        color: #777;
+        padding: 0 15px 15px;
+
+        .lae-dark-bg & {
+          color: #999;
+        }
+
+        &:hover {
+          color: #222;
+
+          .lae-dark-bg & {
+            color: #fff;
+          }
+        }
+
+        @include respond-to-max(479) {
+          padding: 0 10px 8px;
+        }
+      }
+
+      &.lae-active {
+        a {
+          color: #222;
+
+          .lae-dark-bg & {
+            color: #fff;
+          }
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          border-bottom: 3px solid #f94213;
+          width: 100%;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .lae-portfolio {
+    .lae-portfolio-item {
+      .hentry {
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: none;
+        box-shadow: none;
+      }
+
+      .lae-project-image {
+        position: relative;
+        overflow: hidden;
+
+        img {
+          display: block;
+          width: 100%;
+          transition: all .4s ease-in-out 0s;
+        }
+
+        &:hover {
+          img {
+            filter: brightness(50%);
+          }
+        }
+
+        .lae-image-info {
+          display: block;
+          text-align: center;
+
+          .lae-entry-info {
+            text-align: center;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            max-width: 100%;
+            transform: translateY(-50%);
+          }
+
+          .lae-post-title {
+            padding: 10px;
+            margin: 0;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+            color: #fff;
+            opacity: 0;
+            transition: opacity .4s ease-in-out 0s;
+            @include respond-to-max(1024) {
+              font-size: 18px;
+              line-height: 26px;
+            }
+
+            a {
+              display: inline;
+              color: #fff;
+              transition: all .3s ease-in-out 0s;
+              border-bottom: 1px solid transparent;
+
+              &:hover {
+                border-bottom: 1px solid #ccc;
+              }
+            }
+          }
+
+          .lae-terms {
+            display: block;
+            color: #f9f9f9;
+            font-size: 14px;
+            line-height: 22px;
+            opacity: 0;
+            transition: opacity .4s ease-in-out 0s;
+
+            a {
+              color: #ddd;
+              position: relative;
+              display: inline;
+              zoom: 1;
+              font-size: 14px;
+              line-height: 22px;
+              font-style: italic;
+              transition: all .4s ease-in-out 0s;
+
+              &:hover {
+                color: #fff;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          .lae-image-info {
+            .lae-post-title, .lae-terms {
+              opacity: 1;
+            }
+          }
+
+        }
+      }
+
+      .lae-entry-text-wrap {
+        text-align: center;
+        max-width: 650px;
+        margin: 20px auto 0;
+      }
+
+      .entry-title {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: normal;
+        margin-bottom: 10px;
+
+        &:after, &:before {
+          display: none;
+        }
+
+        a {
+          transition: all .4s ease-in-out 0s;
+          color: #333;
+
+          &:hover {
+            color: #888;
+          }
+        }
+
+        .lae-dark-bg & {
+          a {
+            color: #e0e0e0;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      .lae-entry-meta {
+        span {
+          display: inline-block;
+          padding: 0;
+          margin: 0;
+          font-style: italic;
+          color: #999;
+
+          &:after {
+            content: '//';
+            padding-left: 6px;
+            padding-right: 6px;
+          }
+
+          &:first-child {
+            border: none;
+            padding-left: 0;
+          }
+
+          &:last-child:after {
+            display: none;
+          }
+
+          a {
+            @include transition(all 0.3s ease-in-out 0s);
+            font-style: normal;
+          }
+
+          .lae-dark-bg & {
+            color: #707070;
+          }
+        }
+      }
+
+      .entry-summary {
+        margin: 15px auto 0;
+        padding: 0;
+
+        &:before {
+          width: 35px;
+          height: 1px;
+          background: #aaa;
+          display: block;
+          content: "";
+          text-align: center;
+          margin: 0 auto 15px;
+        }
+
+        .lae-dark-bg & {
+          color: #999;
+
+          &:before {
+            background: #505050;
+          }
+        }
+      }
+    }
+  }
+}
+
+.lae-portfolio-wrap .lae-portfolio-item {
+
+  .lae-read-more {
+    margin: 25px 0 0 0;
+  }
+
+  .lae-read-more a:not(.lae-button) {
+    color: #333;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    padding: 0;
+    transition: color 0.3s ease-in-out 0s;
+
+    &:hover {
+      color: #666;
+    }
+
+    &:after {
+      content: '›';
+      display: inline-block;
+      margin-left: 7px;
+    }
+
+    .rtl & {
+      &:after {
+        margin: 0 7px 0 0;
+      }
+    }
+  }
+}

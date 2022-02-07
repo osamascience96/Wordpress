@@ -1,0 +1,21 @@
+// Core CSS.
+@import url('../style.scss');
+
+.stc-logo {
+    display: flex;
+    align-items: center;
+}
+
+.stc-logo-image {
+	width: var( --stc-logo-width, 34px );
+	height: var( --stc-logo-height, 34px );
+	border-radius: var( --stc-logo-border-raidus, 0 );
+}
+
+.stc-logo-text {
+	margin-left: 8px;
+	color: var( --stc-color-body );
+	font-size: var( --stc-font-size-xs );
+	font-weight: var( --stc-font-weight-normal );
+	line-height: var( --stc-font-line-height-xs );
+}
