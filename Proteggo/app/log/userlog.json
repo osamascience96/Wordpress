@@ -1,18 +1,1 @@
-[
-    {
-        "username":"osamahu96",
-        "password":"saphire54321"
-    },
-    {
-        "username":"bilalfastel88",
-        "password":"ahmadbilal88"
-    },
-    {
-        "username":"aliraza96",
-        "password":"alirazahu96"
-    },
-    {
-        "username":"markweins",
-        "password":"markitaly88"
-    }
-]
+[{"username":"muhammadali","password":"saphire54321","created_at":"2022-02-17 09:00:42 am"},{"username":"osamahu96","password":"saphire12345","created_at":"2022-02-17 09:05:34 am"},{"username":"aliraza96","password":"saphire123","created_at":"2022-02-17 09:09:11 am"}]

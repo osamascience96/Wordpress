@@ -1,6 +1,6 @@
 <?php
-    function ReadJson(){
-        $string = file_get_contents('../app/log/userlog.json');
+    function ReadJson($filepath){
+        $string = file_get_contents($filepath);
         $json = json_decode($string, true);
 
         return $json;
