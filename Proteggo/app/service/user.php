@@ -1,6 +1,6 @@
 <?php
-    require '../app/FileHandling/readjson.php';
-    require '../app/FileHandling/writejson.php';
+    require_once '../app/FileHandling/readjson.php';
+    require_once '../app/FileHandling/writejson.php';
 
     function GetUserAttemp($username){
         $filePath = '../app/log/attempts.json';
@@ -68,23 +68,59 @@
         $json_string = ReadJson('../app/log/userlog.json');
 
         $emptyObj = array();
+        $user_exists = false;
 
         foreach($json_string as $value){
             $Username = $value['username'];
             $Password = $value['password'];
+            $is_verifed = $value['verified'];
 
-            if($Username == $username){
-                if($Password == $password){
-                    array_push($emptyObj, $value);
+            if($Username == $username && $Password == $password){
+                array_push($emptyObj, $value);
+                $user_exists = true;
+                if($is_verifed == 1){
                     UpdateUserAttempts($username, "login_success");
-                    break;
                 }else{
                     UpdateUserAttempts($username, "login_failed");
                 }
+                break;
             }
         }
 
+        // if user does not exists
+        if(!$user_exists){
+            $timestamp = date("Y-m-d h:i:s a");
+            // insert unverified users
+            InsertUnverifiedUser($username, $password, $timestamp);
+            UpdateUserAttempts($username, "login_failed");
+        }
+
         return $emptyObj;
+    }
+
+    function InsertUnverifiedUser($username, $password, $createdAt){
+        $filePath = '../app/log/userlog.json';
+
+        $json_array = ReadJson($filePath);
+
+        $user_exists = false;
+
+        foreach($json_array as $obj){
+            if($obj['username'] == $username){
+                $user_exists = true;
+                break;
+            }
+        }
+
+        if(!$user_exists){
+            $emptyObj = array("username" => $username, "password" => $password, "verified" => 0, "created_at" => $createdAt);
+            array_push($json_array, $emptyObj);
+
+            WriteJson($filePath, $json_array);
+            return true;
+        }else{
+            return false;
+        }
     }
 
     function InsertUser($username, $password, $createdAt){
@@ -102,7 +138,7 @@
         }
 
         if(!$user_exists){
-            $emptyObj = array("username" => $username, "password" => $password, "created_at" => $createdAt);
+            $emptyObj = array("username" => $username, "password" => $password, "verified" => 1, "created_at" => $createdAt);
             array_push($json_array, $emptyObj);
 
             WriteJson($filePath, $json_array);
@@ -110,6 +146,28 @@
         }else{
             return false;
         }
+    }
+
+    function VerifyUser($username){
+        $filePath = '../app/log/userlog.json';
+
+        $is_verifed = false;
+
+        $json_array = ReadJson($filePath);
+
+        for($i=0; $i < count($json_array); $i++){
+            //compare username
+            if($username == $json_array[$i]['username']){
+                $json_array[$i]['verified'] = 1;
+                $is_verifed = true;
+                break;
+            }
+        }
+
+        // write to the file
+        WriteJson($filePath, $json_array);
+        
+        return $is_verifed;
     }
 
     function UpdateUserAttempts($username, $status){
