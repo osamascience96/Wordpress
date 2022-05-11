@@ -8,5 +8,4 @@ All my wordpress learnings, experiments and Projects are placed in this reposito
 Please [visit](https://markteck.com/) the site to check the project.
 
 ## MyDoctorOnline Project ##
-<br>
 Please [visit](https://mydoctoronline.000webhostapp.com) the site to check the project.
