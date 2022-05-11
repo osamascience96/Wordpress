@@ -9,4 +9,4 @@ Please [visit](https://markteck.com/) the site to check the project.
 
 ## MyDoctorOnline Project ##
 <br>
-Please [visit](https://mydoctoronline.000webhostapp.com/) the site to check the project.
+Please [visit](https://mydoctoronline.000webhostapp.com) the site to check the project.
