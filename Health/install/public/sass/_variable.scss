@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,500,700&display=swap');
+//Font-Faimily
+$font: 'Dosis', sans-serif;
+$fontHeading: 'Dosis', 'Montserrat', sans-serif;
+
+//Background Color
+$bodyColor: #FCFCFC;
+
+/*Blue Theme Color Code*/
+
+$layerColor: #229AA5;  //Blue
+$colorPrimary: #32C1CE; //blue
+$footerColor: #1C2A2B; //Blue
+$footerBottom: #0A1415; //Blue
+
+$color-primary-0: #32C1CE;	// Main Primary color 
+$color-primary-1: #EBFCFD;	// Main Primary color Extra Light
+$color-primary-2: #75DBE4;	// Main Primary color Light
+$color-primary-3: #02A7B6;  // Main Primary color Dark 
+$color-primary-4: #015259;  // Main Primary color Extra Dark 
+
+$gradientColor: linear-gradient(-90deg,rgba(2,167,182,1), rgba(1, 82, 89,1));
+$gradientBackground: linear-gradient(-90deg,rgba(2,167,182,.8), rgba(1, 82, 89,.8));
+$gradientBackgroundOpposite: linear-gradient(-90deg, rgba(1, 82, 89, .8), rgba(2, 167, 182, .8));
+$color-primary-4-rgba-80: rgba(1, 82, 89,.8);
+
+
+
+/*Green Theme Color Code*/
+/* $layerColor: #337B5D; //Green
+$colorPrimary: #54C798; //Green
+$footerColor: #1C2722; //Green
+$footerBottom: #0A1711; //Green
+
+$color-primary-0: #54C799;	// Main Primary color
+$color-primary-1: #E6FEF4;  // Main Primary color Extra Light
+$color-primary-2: #96EAC8;  // Main Primary color Light
+$color-primary-3: #299E6F;  // Main Primary color Dark
+$color-primary-4: #0F6140;  // Main Primary color Extra Dark 
+
+$gradientColor: linear-gradient(-90deg, rgba( 41,158,111,1), rgba( 15, 97, 64,1));
+$gradientBackground: linear-gradient(-90deg, rgba( 41,158,111,.8), rgba( 15, 97, 64,.8));
+$color-primary-4-rgba-80: rgba(15, 97, 64,.8);
+
+ */
+
+/*Orange Theme Color Code*/
+/*$layerColor: #8E612D; //orange
+$colorPrimary: #EfA752; //orange
+$footerColor: #1C1813; //orange
+$footerBottom: #0E0C0A; //orange
+
+$color-primary-0: #EFA752;	// Main Primary color 
+$color-primary-1: #FFEFDB;  // Main Primary color Extra Light
+$color-primary-2: #FFCE94;  // Main Primary color Light
+$color-primary-3: #B8701B;  // Main Primary color Dark
+$color-primary-4: #5D3200;  // Main Primary color Extra Dark 
+
+$gradientColor: linear-gradient(-90deg, rgba( 184,112, 27,1), rgba( 93, 50,  0,1));
+$gradientBackground: linear-gradient(-90deg, rgba(184,112, 27, 0.8), rgba(93, 50,  0, 0.8));
+$color-primary-4-rgba-80: rgba(93, 50,  0,.8);
+
+*/ 
+
+/*Purple Theme Color Code*/
+/* $layerColor: #573E6D; //purple
+$colorPrimary: #A675D4; //purple
+$footerColor: #1C1029; //purple
+$footerBottom: #0A0815; //purple 
+
+$color-primary-0: #A775D4;  // Main Primary color 
+$color-primary-1: #F7EFFE;  // Main Primary color Extra Light
+$color-primary-2: #D2B0F1;  // Main Primary color Light
+$color-primary-3: #7946A8;  // Main Primary color Dark
+$color-primary-4: #542A7B;  // Main Primary color Extra Dark 
+
+$gradientColor: linear-gradient(-90deg, rgba( 121, 70,168,1), rgba( 84, 42,123,1));
+$gradientBackground: linear-gradient(-90deg, rgba(121, 70,168, 0.8), rgba(84, 42,123, 0.8)); 
+$color-primary-4-rgba-80: rgba(84, 42,123,.8);
+
+*/
+
+//Theme Color
+$colorBlue: #32C1CE;
+$colorGreen: #54C798;
+$colorOrange: #EfA752;
+$colorPurple: #A675D4;
+$colorRed: #cc5151;
+$colorSecondary: #8BC34A;
+$colorTertiary: #CDDC39;
+
+$color-primary: $color-primary-0;
+$color-default: #e7e7ea;
+$color-secondary: #4c5667;
+$color-warning: #fec107;
+$color-danger: #dc3545;
+$color-info: #03a9f3;
+$color-success: #00c292;
+$color-light: #f8f8f8;
+$color-dark: #555;
+
+// Color Code 
+$colorF: #FFF;
+$colorE: #EEE;
+$colorC: #CCC;
+$colorD: #DDD;
+$colorA: #AAA;
+$color9: #999;
+$color7: #777;
+$color5: #555;
+$color3: #333;
+
+//Font Code
+$smallFont: 12px;
+$sMediumFont: 14px;
+$mediumFont: 16px;
+$largeFont: 20px;
+$xlargeFont: 24px;

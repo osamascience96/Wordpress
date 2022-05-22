@@ -1,0 +1,72 @@
+.progress-xs {
+    height: 5px;
+    border-radius: 8px;
+}
+
+.progress-sm {
+    height: 10px;
+    border-radius: 10px;
+}
+
+.progress-md {
+    height: 16px;
+    border-radius: 12px;
+}
+
+.progress-lg {
+    height: 20px;
+    border-radius: 14px;
+}
+
+.progress-xl {
+    height: 30px;
+    border-radius: 16px;
+}
+
+.progress-bar {
+    background-color: $color-primary;
+}
+
+.progress-transparent {
+    background-color: transparent;
+}
+
+.progress-bar-white {
+    background-color: $colorF;
+}
+
+.progress-bar-default {
+    background-color: $colorD;
+}
+
+.progress-bar-primary {
+    background-color: $color-primary;
+}
+
+.progress-bar-secondary {
+    background-color: $color-secondary;
+}
+
+.progress-bar-warning {
+    background-color: $color-warning;
+}
+
+.progress-bar-success {
+    background-color: $color-success;
+}
+
+.progress-bar-danger {
+    background-color: $color-danger;
+}
+
+.progress-bar-info {
+    background-color: $color-info;
+}
+
+.progress-bar-dark {
+    background-color: $color-dark;
+}
+
+.progress-bar-light {
+    background-color: $color-dark;
+}

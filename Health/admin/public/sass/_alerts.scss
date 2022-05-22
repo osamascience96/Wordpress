@@ -1,0 +1,116 @@
+.alert {
+	font-size: 14px;
+}
+
+.alert-dismissible {
+	.close {
+		cursor: pointer;
+		padding: .25rem 1.25rem;
+		opacity: .8;
+	}
+}
+.alert-outline {
+	background-color: $colorF;
+}
+
+.alert-outline-2x {
+	border: 2px solid;
+}
+
+.alert-outline.alert-primary {
+	border-color: $color-primary;
+	color: $color-primary;
+}
+.alert-outline.alert-secondary {
+	border-color: $color-secondary;
+	color: $color-secondary;
+}
+.alert-outline.alert-success {
+	border-color: $color-success;
+	color: $color-success;
+}
+.alert-outline.alert-warning {
+	border-color: $color-warning;
+	color: $color-warning;
+}
+.alert-outline.alert-danger {
+	border-color: $color-danger;
+	color: $color-danger;
+}
+.alert-outline.alert-info {
+	border-color: $color-info;
+	color: $color-info;
+}
+.alert-outline.alert-dark {
+	border-color: $color-dark;
+	color: $color-dark;
+}
+.alert-outline.alert-light {
+	border-color: $color-light;
+	color: $color5;
+}
+
+.alert-primary:not(.alert-outline) {
+	color: $colorF;
+	background-color: $color-primary;
+}
+.alert-secondary:not(.alert-outline) {
+	color: $colorF;
+	background-color: $color-secondary;	
+}
+.alert-success:not(.alert-outline) {
+	color: $colorF;
+	background-color: $color-success;
+}
+.alert-warning:not(.alert-outline) {
+	color: $colorF;
+	background-color: $color-warning;
+}
+.alert-danger:not(.alert-outline) {
+	color: $colorF;
+	background-color: $color-danger;
+}
+.alert-info:not(.alert-outline) {
+	color: $colorF;
+	background-color: $color-info;
+}
+.alert-dark:not(.alert-outline) {
+	color: $colorF;
+	background-color: $color-dark;
+}
+.alert-light:not(.alert-outline) {
+	color: $color5;
+	background-color: $color-light;
+}
+
+.alert-icon {
+	display: table;
+	padding: 0 25px 0 0;
+}
+
+.alert--icon, .alert-text, .alert-button {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.alert--icon {
+    padding: 30px 24px;
+    line-height: 0;
+    width: 1%;
+	
+	i {
+		font-size: 24px;
+	}
+}
+
+.alert-text {
+	font-size: 16px;
+}
+
+.alert-button {
+	max-width: 150px;
+}
+
+.alert-link {
+	font-weight: 400;
+}

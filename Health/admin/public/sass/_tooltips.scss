@@ -1,0 +1,102 @@
+.tooltip-inner {
+	font-size: 14px;
+}
+
+.mdl-tooltip {
+	padding: 12px;
+	font-size: 12px;
+	background-color: $color3;
+
+	&::after {
+		content: '';
+		position: absolute;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		height: 0;
+		width: 0;
+		pointer-events: none;
+		border: solid transparent;
+		border-color: $color3 transparent transparent;
+		border-width: 8px;
+		margin: 0 0 0 -8px;
+	}
+}
+
+
+.mdl-tooltip--top {
+	&::after {
+	}
+}
+
+.mdl-tooltip--left {
+	&::after {
+		top: 50%;
+		left: 100%;
+		margin: -8px 0 0 0;
+		border-color: transparent transparent transparent $color3;
+	}
+}
+
+.mdl-tooltip--bottom {
+	&::after {
+		top: 0;
+		left: 50%;
+		border-color: transparent transparent $color3 transparent;
+		margin: -16px 0 0 -8px;
+	}
+}
+
+.mdl-tooltip--right {
+	&::after {
+		top: 50%;
+		left: 0;
+		margin: -8px 0 0 -16px;
+		border-color: transparent $color3 transparent transparent;
+	}
+}
+
+.tooltip-white {
+	color: $color3;
+	background-color: $colorF;
+	border: 1px solid $colorE;
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+
+	&::after {
+		border-color: $colorF transparent transparent;
+	}
+}
+
+.tooltip-white.mdl-tooltip--left {
+	&::after {
+		border-color: transparent transparent transparent $colorF;
+	}
+}
+
+.tooltip-white.mdl-tooltip--bottom {
+	&::after {
+		border-color: transparent transparent $colorF transparent;
+	}
+}
+
+.tooltip-white.mdl-tooltip--right {
+	&::after {
+		border-color: transparent $colorF transparent transparent;
+	}
+}
+
+.mdl-tooltip--large {
+	font-size: 14px;
+}
+
+.tooltip-html {
+	max-width: 300px;
+
+	img {
+		width: 100%;
+	}
+}
+
+.tooltip-pill {
+	border-radius: 20px;
+}

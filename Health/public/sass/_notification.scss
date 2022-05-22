@@ -1,0 +1,39 @@
+.jq-icon-info, .jq-icon-warning, .jq-icon-error, .jq-icon-success {
+	color: $colorF;
+}
+.jq-icon-info {
+	background-color: $color-info;
+}
+
+.jq-icon-warning {
+	background-color: $color-warning;
+}
+
+.jq-icon-error {
+	background-color: $color-danger;
+}
+
+.jq-icon-success {
+	background-color: $color-success;
+}
+
+
+.notification {
+	display: none;
+	position: fixed;
+	z-index: 99999;
+
+	.close {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		padding: 5px;
+		font-size: 14px;
+		color: $colorE;
+	}
+}
+
+.notification-left-top {
+	top: 20px;
+	left: 20px;
+}

@@ -1,0 +1,116 @@
+.panel {
+	color: $color5;
+	background: $colorF;
+	margin-bottom: 15px;
+	box-shadow: 0 0 10px 1px rgba(150,150,150,.04);
+}
+
+.panel-head {
+	display: table;
+	width: 100%;
+	margin: 0;
+	color: $color7;
+	padding: 20px 25px 15px 25px;
+	border-bottom: 1px solid $colorD;
+}
+
+.panel-title {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 0;
+}
+
+.panel-head-icon {
+	font-size: 20px;
+	padding: 0 10px 0 0;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.panel-action {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+	font-size: 18px;
+}
+
+.panel-title-text {
+
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.panel-body {
+	padding: 25px;
+}
+
+.panel-footer {
+	border-top: 1px solid $colorD;
+	padding: 20px 25px;
+}
+
+.panel-primary {
+	border: 0;
+
+	.panel-head {
+		color: $colorF;
+		background-color: $color-primary;
+	}
+}
+
+.panel-success {
+	border: 0;
+	
+	.panel-head {
+		color: $colorF;
+		background-color: $color-success;
+	}
+}
+
+.panel-warning {
+	border: 0;
+
+	.panel-head {
+		color: $colorF;
+		background-color: $color-warning;
+	}
+}
+
+.panel-danger {
+	border: 0;
+
+	.panel-head {
+		color: $colorF;
+		background-color: $color-danger;
+	}
+}
+
+.panel-secondary {
+	border: 0;
+
+	.panel-head {
+		color: $colorF;
+		background-color: $color-secondary;
+	}
+}
+
+.panel-info {
+	border: 0;
+
+	.panel-head {
+		color: $colorF;
+		background-color: $color-info;
+	}
+}
+
+.panel-dark {
+	border: 0;
+
+	.panel-head {
+		color: $colorF;
+		background-color: $color-dark;
+	}
+}

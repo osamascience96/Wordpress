@@ -1,0 +1,234 @@
+
+.tab-content {
+	margin-top: 0;
+}
+
+.nav-link {
+	padding: 10px 15px;
+	margin-left: 2px;
+	font-family: $fontHeading;
+	font-size: 16px;
+
+	i {
+		font-size: 16px;
+	}
+}
+
+.nav.nav-pills {
+	.nav-link.active {
+		i {
+			color: $colorF;
+		}
+	}
+}
+
+.nav-pills {
+
+	.nav-link.active {
+		color: $colorF;
+		background: $color-primary;
+	}
+
+	.show>.nav-link {
+		color: $colorF;
+		background: $color-primary;
+	}
+}
+
+.nav.nav-pills.nav-pills-primary {
+	
+	.nav-link {
+		&:hover {
+			color: $color-primary;
+		}
+	}
+
+	.nav-link.active {
+		background-color: $color-primary;
+	}
+}
+
+.nav.nav-pills.nav-pills-success {
+	
+	.nav-link {
+		&:hover {
+			color: $color-success;
+		}
+	}
+	
+	.nav-link.active {
+		background-color: $color-success;
+	}
+}
+
+.nav.nav-pills.nav-pills-warning {
+	
+	.nav-link {
+		&:hover {
+			color: $color-warning;
+		}
+	}
+	
+	.nav-link.active {
+		background-color: $color-warning;
+	}
+}
+
+.nav.nav-pills.nav-pills-danger {
+	
+	.nav-link {
+		&:hover {
+			color: $color-danger;
+		}
+	}
+
+	.nav-link.active {
+		background-color: $color-danger;
+	}
+}
+
+.nav.nav-pills.nav-pills-secondary {
+	
+	.nav-link {
+		&:hover {
+			color: $color-secondary;
+		}
+	}
+	
+	.nav-link.active {
+		background-color: $color-secondary;
+	}
+}
+
+.nav.nav-pills.nav-pills-info {
+	
+	.nav-link {
+		&:hover {
+			color: $color-info;
+		}
+	}
+	
+	.nav-link.active {
+		background-color: $color-info;
+	}
+}
+
+.nav.nav-pills.nav-pills-dark {
+	
+	.nav-link {
+		&:hover {
+			color: $color-dark;
+		}
+	}
+	
+	.nav-link.active {
+		background-color: $color-dark;
+	}
+}
+
+.nav.nav-pills.nav-pills-primary, .nav.nav-pills.nav-pills-secondary,
+.nav.nav-pills.nav-pills-success, .nav.nav-pills.nav-pills-warning,
+.nav.nav-pills.nav-pills-info, .nav.nav-pills.nav-pills-danger,
+.nav.nav-pills.nav-pills-dark {
+	.nav-link.active {
+		&:hover {
+			color: $colorF;
+		}
+	}
+}
+
+.nav-tabs.nav-tabs-line {
+	border-bottom: 1px solid $colorD;
+
+	.nav-link {
+		border: 0;
+	}
+
+	.nav-link.active, .show>.nav-link {
+		border-bottom: 2px solid $colorA;
+	}
+}
+
+.nav-tabs.nav-tabs-line-primary {
+	.nav-link {
+		&:hover {
+			color: $color-primary;
+		}
+	}
+	.nav-link.active, .show>.nav-link {
+		color: $color-primary;
+		border-color: $color-primary;
+	}
+}
+
+.nav-tabs.nav-tabs-line-secondary {
+	.nav-link {
+		&:hover {
+			color: $color-secondary;
+		}
+	}
+	.nav-link.active, .show>.nav-link {
+		color: $color-secondary;
+		border-color: $color-secondary;
+	}
+}
+
+.nav-tabs.nav-tabs-line-success {
+	.nav-link {
+		&:hover {
+			color: $color-success;
+		}
+	}
+	.nav-link.active, .show>.nav-link {
+		color: $color-success;
+		border-color: $color-success;
+	}
+}
+
+.nav-tabs.nav-tabs-line-warning {
+	.nav-link {
+		&:hover {
+			color: $color-warning;
+		}
+	}
+	.nav-link.active, .show>.nav-link {
+		color: $color-warning;
+		border-color: $color-warning;
+	}
+}
+
+.nav-tabs.nav-tabs-line-danger {
+	.nav-link {
+		&:hover {
+			color: $color-danger;
+		}
+	}
+	.nav-link.active, .show>.nav-link {
+		color: $color-danger;
+		border-color: $color-danger;
+	}
+}
+
+.nav-tabs.nav-tabs-line-info {
+	.nav-link {
+		&:hover {
+			color: $color-info;
+		}
+	}
+	.nav-link.active, .show>.nav-link {
+		color: $color-info;
+		border-color: $color-info;
+	}
+}
+
+.nav-tabs.nav-tabs-line-dark {
+	.nav-link {
+		&:hover {
+			color: $color-dark;
+		}
+	}
+	.nav-link.active, .show>.nav-link {
+		color: $color-dark;
+		border-color: $color-dark;
+	}
+}

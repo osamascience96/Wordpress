@@ -1,0 +1,393 @@
+.text-primary {
+	color: $color-primary-0!important;
+}
+
+.text-secondary {
+	color: $color-secondary-0!important;
+}
+
+.text-danger {
+    color: $color-danger!important;
+}
+
+.text-warning {
+    color: $color-warning!important;
+}
+
+.text-success {
+    color: $color-success!important;
+}
+
+.text-info {
+    color: $color-info!important;
+}
+
+.text-white {
+    color: $colorF!important;
+}
+
+.text-less-white {
+    color: $colorE!important;
+}
+
+.text-lesser-white {
+    color: $colorD!important;
+}
+
+.text-blue {
+    color: $color-blue!important;
+}
+
+.text-green {
+    color: $color-green!important;
+}
+
+.text-orange {
+    color: $color-orange!important;
+}
+
+.text-red {
+    color: $color-danger!important;
+}
+
+.text-purple {
+    color: $color-purple!important;
+}
+
+.text-black {
+    color: $color3!important;
+}
+
+.text-dark {
+    color: $color5!important;
+}
+
+.text-less-dark {
+    color: $color7!important;
+}
+
+.text-lesser-dark {
+    color: $color9!important;
+}
+
+.text-light {
+    color: $color7!important;
+}
+
+.text-accent {
+    color: #00c5dc;
+}
+
+.text-facebook {
+    color: #3b5998;
+}
+
+.text-twitter {   
+    color: #00aced; 
+}
+
+.text-instagram {
+    color: #9b6954;   
+}
+
+.text-linkedin {
+    color: #4875B4;
+}
+
+.text-google {
+    color: #C63D2D;
+}
+
+.text-pinterest {
+    color: #C92228;
+}
+
+.text-flickr {
+    color: #FE0883;
+}
+
+.text-tumblr {
+    color: #2B4964;
+}
+
+.text-youtube {
+    color: #FF3333;
+}
+
+.text-dribbble {
+    color: #ea4c89;
+}
+
+
+/* [ BACKGROUND CSS START ] */
+
+.bg-gradient {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.55));
+}
+
+.bg-gradient-reverse {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.55));
+}
+
+.bg-light {
+    background-color: #fafafa;
+}
+
+.bg-primary {
+    background-color: $color-primary-rgb !important;
+}
+
+.bg-primary-1 {
+    background-color: $color-primary-1 !important;
+}
+
+.bg-primary-2 {
+    background-color: $color-primary-2 !important;
+}
+
+.bg-primary-3 {
+    background-color: $color-primary-3 !important;
+}
+
+.bg-primary-4 {
+    background-color: $color-primary-4 !important;
+}
+
+.bg-secondary {
+    background-color: $color-secondary-0 !important;
+}
+
+.bg-success {
+    background-color: $color-success-rgb !important;
+}
+
+.bg-warning {
+    background-color: $color-warning-rgb !important;
+}
+
+.bg-danger {
+    background-color: $color-danger-rgb !important;
+}
+
+.bg-info {
+    background-color: $color-info-rgb !important;
+}
+
+.bg-dark {
+    background-color: $color5 !important;
+}
+
+.bg-accent {
+    background-color: #00c5dc;
+}
+
+.bg-facebook {
+    background-color: #3b5998;
+}
+
+.bg-twitter {   
+    background-color: #00aced; 
+}
+
+.bg-instagram {
+    background-color: #9b6954;   
+}
+
+.bg-linkedin {
+    background-color: #4875B4;
+}
+
+.bg-google {
+    background-color: #C63D2D;
+}
+
+.bg-pinterest {
+    background-color: #C92228;
+}
+
+.bg-flickr  {
+    background-color: #FE0883;
+}
+
+.bg-tumblr {
+    background-color: #2B4964;
+}
+
+.bg-youtube {
+    background-color: #FF3333;
+}
+
+.bg-dribbble {
+    background-color: #ea4c89;
+}
+
+.bg-gradient {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.25));
+}
+
+
+
+/* [ BADGE CSS START ] */
+.badge {
+    padding: 0.4em .8em;
+    font-size: 100%;
+    letter-spacing: .5px;
+    vertical-align: baseline;
+    font-weight: 500;
+}
+
+.badge-sm {
+    font-size: 75%;
+    padding: 4px 6px;
+}
+
+.badge-default {
+    background-color: $colorD;
+}
+
+.badge-white {
+    color: $color3;
+    background-color: $colorF;
+}
+
+.badge-primary {
+    background-color: $color-primary;
+}
+
+.badge-secondary {
+    background-color: $color-secondary-0;
+}
+
+.badge-success {
+    background-color: $color-success;
+}
+
+.badge-warning {
+    background-color: $color-warning;
+}
+
+.badge-danger {
+    background-color: $color-danger;
+}
+
+.badge-info {
+    background-color: $color-info;
+}
+
+.badge-light {
+    color: $color3;
+    background-color: $colorF;
+    border: 1px solid $colorE;
+}
+
+.badge-dark {
+    background-color: $color-dark;
+}
+
+//Label CSS
+.label {
+    position: relative;
+    padding: 0 0 0 10px;
+    font-size: 100%;
+    font-weight: 500;
+    opacity: .7;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -3px;
+        display: inline-block;
+        height: 6px;
+        width: 6px;
+        font-size: 0;
+        border-radius: 0;
+        background-color: $color3;
+    }
+}
+
+.label-sm {
+    font-size: 75%;
+    padding: 4px 6px;
+}
+
+.label-default {
+    color: $colorD;
+
+    &::before {
+        background-color: $colorD;
+    }
+}
+
+.label-white {
+    color: $colorF;
+
+    &::before {
+        background-color: $colorF;
+    }
+}
+
+.label-primary {
+    color: $color-primary;
+
+    &::before {
+        background-color: $color-primary;
+    }
+}
+
+.label-secondary {
+    color: $color-secondary-0;
+
+    &::before {
+        background-color: $color-secondary-0;
+    }
+}
+
+.label-success {
+    color: $color-success;
+
+    &::before {
+        background-color: $color-success;
+    }
+}
+
+.label-warning {
+    color: $color-warning;
+
+    &::before {
+        background-color: $color-warning;
+    }
+}
+
+.label-danger {
+    color: $color-danger;
+
+    &::before {
+        background-color: $color-danger;
+    }
+}
+
+.label-info {
+    color: $color-info;
+
+    &::before {
+        background-color: $color-info;
+    }
+}
+
+.label-light {
+    color: $color3;
+
+    &::before {
+        background-color: $color3;
+    }
+}
+
+.label-dark {
+    background-color: $color-dark;
+
+    &::before {
+        background-color: $color-dark;
+    }
+}

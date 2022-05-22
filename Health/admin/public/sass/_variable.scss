@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis:500,700&display=swap');
+//Font-Faimily
+$font: 'Poppins', sans-serif;
+$fontHeading: "Dosis", 'Poppins', sans-serif;
+//$fontHeading: 'Playfair Display', serif;
+//Background Color
+$bodyColor: #FAFAFA;
+
+//*************************************************
+// Blue Theme Color Code **************************
+//************************************************/
+
+$color-primary-0: #3483FF;	// Main Primary color */
+$color-primary-0: #5d78ff;	// Main Primary color */
+$color-primary-1: #8895DC;
+$color-primary-2: #5E6EC7;
+$color-primary-3: #2137AA;
+$color-primary-4: #132584;
+
+// As RGBa codes */
+$rgba-primary-0: rgba( 52,131,255,1);	// Main Primary color */
+$rgba-primary-0: rgba( 63, 81, 181,1);	// Main Primary color */
+$rgba-primary-1: rgba(136,149,220,1);
+$rgba-primary-2: rgba( 94,110,199,1);
+$rgba-primary-3: rgba( 33, 55,170,1);
+$rgba-primary-4: rgba( 19, 37,132,1);
+
+$gradientColor: linear-gradient(-90deg,rgba(31, 255, 218,1), rgba(52,131,255,1));
+$gradientBackground: linear-gradient(-90deg,rgba(31, 255, 218,.8), rgba(52,131,255,.8));
+$color-primary-4-rgba-80: rgba(1, 82, 89,.8);
+
+$color-secondary-0: #282a3c;
+$color-secondary-0-rgba: rgba(40, 42, 60, .9);
+
+
+//Theme Color
+$color-default: #DDD;
+$color-blue: #32C1CE;
+$color-green: #54C798;
+$color-orange: #EfA752;
+$color-purple: #A675D4;
+$color-red: #cc5151;
+
+
+$color-primary: $color-primary-0;
+$color-secondary: $color-secondary-0;
+$color-warning: #ffb822;
+$color-danger: #fd397a;
+$color-info: #03a9f3;
+$color-light: #EEE;
+$color-dark: #555;
+$color-success: #0abb87;
+$color-white: #fff;
+$color-black: #222;
+$color-menu : #282a3c;
+
+$color-primary-rgba: rgba(63, 81, 181, .1);
+$color-secondary-rgba: rgba(40, 42, 60, .1);
+$color-warning-rgba: rgba(254, 193, 7, .1);
+$color-danger-rgba: rgba(251, 150, 120, .1);
+$color-info-rgba: rgba(3, 169, 243, .1);
+$color-light-rgba: rgba(238, 238, 238, .1);
+$color-dark-rgba: rgba(85, 85, 85, .1);
+$color-success-rgba: rgba(11, 195, 110, .1);
+
+$color-primary-rgba-60: rgba(63, 81, 181, .60);
+$color-secondary-rgba-60: rgba(40, 42, 60, .60);
+$color-warning-rgba-60: rgba(254, 193, 7, .60);
+$color-danger-rgba-60: rgba(251, 150, 120, .60);
+$color-info-rgba-60: rgba(3, 169, 243, .60);
+$color-light-rgba-60: rgba(238, 238, 238, .60);
+$color-dark-rgba-60: rgba(85, 85, 85, .60);
+$color-success-rgba-60: rgba(11, 195, 110, .60);
+
+$color-primary-rgba-60: rgba(63, 81, 181, .40);
+$color-secondary-rgba-60: rgba(40, 42, 60, .40);
+$color-warning-rgba-60: rgba(254, 193, 7, .40);
+$color-danger-rgba-60: rgba(251, 150, 120, .40);
+$color-info-rgba-60: rgba(3, 169, 243, .40);
+$color-light-rgba-60: rgba(238, 238, 238, .40);
+$color-dark-rgba-60: rgba(85, 85, 85, .40);
+$color-success-rgba-60: rgba(11, 195, 110, .40);
+
+$color-primary-rgb: rgb(63, 81, 181);
+$color-secondary-rgb: rgb(40, 42, 60);
+$color-warning-rgb: rgb(254, 193, 7);
+$color-danger-rgb: rgb(251, 150, 120);
+$color-info-rgb: rgb(3, 169, 243);
+$color-light-rgb: rgb(238, 238, 238);
+$color-dark-rgb: rgb(85, 85, 85);
+$color-success-rgb: rgb(11, 195, 110);
+
+
+// Color Code 
+$colorF: #FFF;
+$colorE: #EEE;
+$colorC: #CCC;
+$colorD: #DDD;
+$colorA: #AAA;
+$color9: #999;
+$color7: #777;
+$color5: #555;
+$color3: #333;
+
+//Font Code
+$smallFont: 12px;
+$sMediumFont: 14px;
+$mediumFont: 16px;
+$largeFont: 20px;
+$xlargeFont: 24px;

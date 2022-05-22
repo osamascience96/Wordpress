@@ -1,0 +1,153 @@
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    margin: 0 auto;
+}
+
+.boxed {
+    max-width: 1170px;
+    margin: 0 auto;
+
+    .page-hdr-fixed {
+        .page-hdr {
+            width: 1170px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.container-fluid {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.h-200 {
+    max-height: 200px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.h-250 {
+    max-height: 250px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.h-300 {
+    max-height: 300px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.h-350 {
+    max-height: 350px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.h-400 {
+    max-height: 400px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.h-500 {
+    max-height: 500px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.h-600 {
+    max-height: 600px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.modal-title {
+    font-size: 20px;
+}
+
+.br-bottom-1x {
+    border-bottom: 4px dotted $colorA;
+}
+
+.tbl {
+    display: table;
+    width: 100%;
+}
+
+.tbl-row {
+    display: table-row;
+}
+
+.tbl-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.jqstooltip {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.br-10x {
+    border-radius: 10px!important;
+}
+
+.br-20x {
+    border-radius: 20px!important;
+}
+
+.br-40x {
+    border-radius: 40px!important;
+}
+
+.cricle {
+    border-radius: 50%!important;
+}
+
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pull-up-on-hover {
+    transition: all .2s ease-in;
+    &:hover {
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 14px 24px rgba(62,57,107,.2);
+        z-index: 999;
+    }
+}
+
+.shadow-1{
+    box-shadow:0 7px 12px 0 rgba(62,57,107,.16);
+}
+
+.shadow-2{
+    box-shadow:0 10px 18px 0 rgba(62,57,107,.2)
+}
+
+.shadow-3{
+    box-shadow:0 14px 24px 0 rgba(62,57,107,.26)
+}
+
+.shadow-4{
+    box-shadow:0 16px 28px 0 rgba(62,57,107,.3)
+}
+
+.shadow-5{
+    box-shadow:0 27px 24px 0 rgba(62,57,107,.36)
+}

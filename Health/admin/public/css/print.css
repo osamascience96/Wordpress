@@ -1,0 +1,12 @@
+#hiderow,
+.delete {
+	display: none;
+}
+
+.bottom {
+	display: none !important;
+}
+
+.success {
+	display: none !important;
+}

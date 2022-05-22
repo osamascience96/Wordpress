@@ -1,0 +1,381 @@
+body {
+  padding: 30px 0;
+  margin: 0;
+}
+@page {padding: 0; margin: 0; }
+
+.text-right {
+  text-align: right;
+}
+
+.pl-30 {
+  padding-left: 30px!important;
+}
+
+.pr-30 {
+  padding-right: 30px!important;
+}
+
+.pt-30 {
+  padding-right: 30px!important;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.v-align-middle {
+  vertical-align: middle;
+}
+
+.v-align-top {
+  vertical-align: top;
+}
+
+.v-align-bottom {
+  vertical-align: bottom;
+}
+
+.w-min-130 {
+  min-width: 130px;
+  width: 130px;
+}
+
+.w-min-200 {
+  min-width: 200px;
+  width: 200px;
+}
+
+ul {
+  padding: 0 0 0 20px;
+  margin: 5px 0;
+}
+
+table {
+  width: 100%;
+}
+
+.inv-template {
+}
+
+.company {
+  padding: 0 0 15px 0;
+}
+
+.company .title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.company .name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 5px 0 5px 0;
+}
+
+.company .logo {
+  margin: 0 0 10px 0;
+}
+
+.company .logo img {
+  height: 40px;
+}
+
+.company .text {
+  font-size: 14px;
+  color: #333;
+  margin: 0 0 5px 0;
+}
+
+.meta {
+  padding: 15px 0;
+  border-top: 1px solid #ddd;
+}
+
+.meta .heading {
+  font-size: 10px;
+  color: #777;
+}
+
+.meta .title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 5px 0 5px 0;
+}
+
+.meta .text {
+  font-size: 14px;
+  color: #333;
+  margin: 0 0 5px 0;
+}
+
+.item {
+  text-align: left;
+  padding: 25px 0;
+  border-top: 1px solid #ddd;
+}
+
+.item table th {
+  color: #000;
+  font-size: 14px;
+  padding: 8px;
+  font-weight: 400;
+  background-color: #DDD;
+  border: 1px solid #DDD;
+}
+
+.item table td {
+  color: #333;
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid #DDD;
+}
+
+.item .title p {
+  font-size: 14px;
+  margin: 0 0 5px 0;
+}
+
+.item .title span {
+  font-size: 14px;
+  color: #777;
+}
+
+.item .tax div {
+  margin: 5px 0 0 0;
+  padding: 5px 0 0 0;
+}
+
+.item .tax div:nth-child(1) {
+  margin: 0;
+  padding: 0;
+  border-top: 0;
+}
+
+.item .tax span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.item .tax span:nth-child(2) {
+  font-size: 12px;
+  margin: 0 0 0 5px;
+  color: #777;
+}
+
+.item .total .blank {
+  border: 0;
+}
+
+.item .total .title {
+  text-align: right;
+  color: #333;
+  font-weight: 500;
+}
+
+.note {
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+}
+
+.note .block {
+  width: 50%;
+}
+
+.note .block span {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+  font-weight: 600;
+}
+
+.note p {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0 0 0;
+}
+
+.item .payment {
+  padding: 15px 0;
+  /*border-top: 1px solid #ddd;*/ 
+}
+
+.item .payment .title, .payment-total .payment .title {
+  font-size: 14px;
+  color: #333;
+  margin: 0 0 5px 0;
+  font-weight: 600;
+  text-align: left;
+}
+
+.item .payment td, .payment-total .payment td {
+  font-size: 14px;
+  color: #333;
+  padding: 0 0 5px 0;
+  border: 0;
+  background-color: #fff;
+}
+
+.item .payment td:nth-child(1), .payment-total .payment td:nth-child(1) {
+  min-width: 100px;
+  width: 100px;
+  color: #777;
+}
+
+
+.strip {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  background-color: #ffc809;
+}
+
+.strip p {
+  position: absolute;
+  right: 0;
+  top: -1px;
+  display: inline-block;
+  padding: 0px 20px;
+  margin: 0 75px 0 0;
+  font-size: 44px;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 800;
+  background-color: #fff;
+}
+
+.inv-template-1 .item table {
+  border: 1px solid #9ea9be;
+}
+
+.inv-template-1 .item tr:nth-child(2n) {
+  background-color: #f7f9fd;
+}
+
+.inv-template-1 .item th {
+  padding: 15px 10px;
+  color: #eee;
+  font-weight: 400;
+  background-color: #373b46;
+  border: 0;
+}
+
+.inv-template-1 .item td {
+  color: #373b46;
+  border: 0;
+  padding: 10px;
+}
+
+.inv-template-1 .payment {
+  border: 0;
+}
+
+.payment-total {
+  padding-bottom: 25px;
+}
+
+.payment-total td:nth-child(1) {
+  width: 60%;
+}
+
+.payment-total td:nth-child(2) {
+  width: 40%;
+}
+
+.payment-total .total {
+}
+
+.payment-total .total td {
+  padding: 5px 5px 10px 5px;
+  font-size: 16px;
+  color: #333;
+  border-spacing:0 15px;
+}
+
+.payment-total .total td:nth-child(1) {
+  width: 50%;
+}
+
+.payment-total .total td:nth-child(2) {
+  width: 50%;
+  padding-right: 30px!important;
+  font-weight: 600;
+}
+
+.payment-total .total .main td {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px;
+  background-color: #ffc809;
+}
+
+.bottom {
+  padding: 20px 0 20px 0;
+  border-top: 1px solid #eee;
+}
+
+.sign {
+  text-align: right; 
+}
+
+.sign div {
+  font-size: 18px;
+  color: #555;
+  font-weight: 600;
+}
+
+.sign img {
+  height: 40px;
+}
+
+.sign .sign_white {
+  width: 200px;
+  height: 50px;
+}
+
+.ps-template .strip p {
+  font-size: 20px;
+  height: 41px;
+  line-height: 34px;
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  padding: 0px 20px;
+  margin: 0 75px 0 0;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 800;
+  background-color: #fff;
+}
+.ps-template .strip {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  text-align: right;
+  background-color: #ffc809;
+}
+
+.ps-template .ps-patient .name {
+  font-size: 18px;
+  color: #333;
+  font-weight: 400;
+}
+
+.ps-template .ps-patient .date {
+  font-size: 18px;
+  color: #333;
+  font-weight: 400;
+}
+
+
+
+
+
+
+

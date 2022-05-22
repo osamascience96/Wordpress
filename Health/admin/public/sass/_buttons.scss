@@ -1,0 +1,701 @@
+/* [ BOOTSTRAP BUTTON CSS START ] */
+.btn {
+    height: auto;
+    line-height: normal;
+    padding: 10px 20px;
+    font-weight: 400;
+    color: $colorF;
+    font-size: 14px;
+    font-family: $font;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &.disabled {
+        cursor: not-allowed;
+    }
+
+    &:focus, &:active {
+        box-shadow: none;
+    }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus,
+.btn-success:not(:disabled):not(.disabled).active:focus, .btn-success:not(:disabled):not(.disabled):active:focus, .show>.btn-success.dropdown-toggle:focus,
+.btn-warning:not(:disabled):not(.disabled).active:focus, .btn-warning:not(:disabled):not(.disabled):active:focus, .show>.btn-warning.dropdown-toggle:focus,
+.btn-danger:not(:disabled):not(.disabled).active:focus, .btn-danger:not(:disabled):not(.disabled):active:focus, .show>.btn-danger.dropdown-toggle:focus,
+.btn-dark:not(:disabled):not(.disabled).active:focus, .btn-dark:not(:disabled):not(.disabled):active:focus, .show>.btn-dark.dropdown-toggle:focus,
+.btn-info:not(:disabled):not(.disabled).active:focus, .btn-info:not(:disabled):not(.disabled):active:focus, .show>.btn-info.dropdown-toggle:focus,
+.btn-light:not(:disabled):not(.disabled).active:focus, .btn-light:not(:disabled):not(.disabled):active:focus, .show>.btn-light.dropdown-toggle:focus {
+
+    &:active:focus {
+        opacity: .8;
+        box-shadow: none;
+    }
+}
+
+.btn-gradient {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.25));
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-white {
+    color: $color7;
+    background-color: $colorF;
+    border-color: $colorD;
+
+    &:hover {
+        color: $color3;
+    }
+}
+
+.btn-default {
+    color: $color3;
+    background-color: $colorD;
+    border-color: $colorD;
+}
+
+.btn-primary {
+    background-color: $color-primary;
+    border-color: $color-primary;
+}
+
+.btn-secondary {
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+}
+
+.btn-success {
+    background-color: $color-success;
+    border-color: $color-success;
+}
+
+.btn-warning {
+    color: $color5;
+    background-color: $color-warning;
+    border-color: $color-warning;
+
+    &:hover, &:active, &:focus {
+        color: $color3;
+    }
+}
+
+.btn-danger {
+    background-color: $color-danger;
+    border-color: $color-danger;
+}
+
+.btn-info {
+    background-color: $color-info;
+    border-color: $color-info;
+}
+
+.btn-dark {
+    background-color: $color-dark;
+    border-color: $color-dark;
+}
+
+.btn-light {
+    background-color: $color-light;
+    border-color: $color-light;
+}
+
+.btn-accent {
+    background-color: #00c5dc;
+    border-color: #00c5dc;
+}
+
+.btn-facebook {
+    background-color: #3b5998;
+    border-color: #3b5998;
+}
+
+.btn-twitter {   
+    background-color: #00aced;
+    border-color: #00aced;
+}
+
+.btn-instagram {
+    background-color: #9b6954;
+    border-color: #9b6954; 
+}
+
+.btn-linkedin {
+    background-color: #4875B4;
+    border-color: #4875B4;
+}
+
+.btn-google {
+    background-color: #C63D2D;
+    border-color: #C63D2D;
+}
+
+.btn-pinterest {
+    background-color: #C92228;
+    border-color: #C92228;
+}
+
+.btn-flickr  {
+    background-color: #FE0883;
+    border-color: #FE0883;
+}
+
+.btn-tumblr {
+    background-color: #2B4964;
+    border-color: #2B4964;
+}
+
+.btn-youtube {
+    background-color: #FF3333;
+    border-color: #FF3333;
+}
+
+.btn-dribbble {
+    background-color: #ea4c89;
+    border-color: #ea4c89;
+}
+
+.btn-blue {
+    color: $colorF;
+    background-color: $color-blue;
+    border: 2px solid $color-blue;
+}
+
+.btn-orange {
+    color: $colorF;
+    background: $color-orange;
+    border: 2px solid $color-orange;
+}
+
+.btn-purple {
+    color: $colorF;
+    background-color: $color-purple;
+    border: 2px solid $color-purple;
+}
+
+.btn-red {
+    color: $colorF;
+    background-color: $color-red;
+    border: 2px solid $color-red;
+}
+.btn-outline.btn-default, .btn-outline.btn-info {
+
+    color: $color5;
+    background-color: transparent;
+
+    &:hover {
+        color: $color3;
+    }
+}
+
+.btn-outline.btn-primary,
+.btn-outline.btn-secondary,
+.btn-outline.btn-success,
+.btn-outline.btn-danger,
+.btn-outline.btn-warning,
+.btn-outline.btn-dark,
+.btn-outline.btn-light {
+    color: $color5;
+    background-color: transparent;
+
+    &:hover {
+        color: $colorF;
+    }
+}
+
+.btn-outline-1x {
+    border: 1px solid;
+}
+
+.btn-outline-2x {
+    border: 2px solid;
+}
+
+.btn-outline.btn-default {
+    color: $color5;
+    border-color: $color-default;
+
+    &:hover {
+        background-color: $colorD; 
+    }
+}
+
+.btn-outline.btn-primary {
+    color: $color-primary;
+    border-color: $color-primary;
+    &:hover {
+        background-color: $color-primary; 
+    }
+}
+
+.btn-outline.btn-secondary {
+    color: $color-secondary;
+    border-color: $color-secondary;
+
+    &:hover {
+        background-color: $color-secondary; 
+    }
+}
+.btn-outline.btn-success {
+    color: $color-success;
+    border-color: $color-success;
+
+    &:hover {
+        background-color: $color-success; 
+    }
+}
+.btn-outline.btn-danger {
+    color: $color-danger;
+    border-color: $color-danger;
+    &:hover {
+        background-color: $color-danger; 
+    }
+}
+.btn-outline.btn-warning {
+    color: $color-warning;
+    border-color: $color-warning;
+
+    &:hover {
+        background-color: $color-warning; 
+    }
+}
+.btn-outline.btn-info {
+    color: $color-info;
+    border-color: $color-info;
+
+    &:hover {
+        background-color: $color-info; 
+    }
+}
+.btn-outline.btn-dark {
+    color: $color-dark;
+    border-color: $color-dark;
+
+    &:hover {
+        background-color: $color-dark; 
+    }
+}
+.btn-outline.btn-light {
+    color: $color5;
+    border-color: $color-light;
+
+    &:hover {
+        background-color: $color-light; 
+    }
+}
+
+.btn-primary:not([disabled]):not(.disabled).active {
+    border-color: $color-primary;
+    background-color: $color-primary-rgba-60;
+}
+
+.btn-primary:not([disabled]):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle {
+    border-color: $color-primary;
+    background-color: $color-primary;
+}
+
+.btn-success:not([disabled]):not(.disabled).active{
+    border-color: $color-success;
+    background-color: $color-success-rgba-60;
+}
+
+.btn-success:not([disabled]):not(.disabled):active, 
+.show>.btn-success.dropdown-toggle {
+    border-color: $color-success;
+    background-color: $color-success;
+}
+
+.btn-warning:not([disabled]):not(.disabled).active {
+    border-color: $color-warning;
+    background-color: $color-warning-rgba-60;
+}
+
+.btn-warning:not([disabled]):not(.disabled):active, 
+.show>.btn-warning.dropdown-toggle {
+    border-color: $color-warning;
+    background-color: $color-warning;
+}
+
+.btn-danger:not([disabled]):not(.disabled).active {
+    border-color: $color-danger;
+    background-color: $color-danger-rgba-60;
+}
+
+.btn-danger:not([disabled]):not(.disabled):active, 
+.show>.btn-danger.dropdown-toggle {
+    border-color: $color-danger;
+    background-color: $color-danger;
+}
+
+.btn-info:not([disabled]):not(.disabled).active {
+    border-color: $color-info;
+    background-color: $color-info-rgba-60;
+}
+
+.btn-info:not([disabled]):not(.disabled):active, 
+.show>.btn-info.dropdown-toggle {
+    border-color: $color-info;
+    background-color: $color-info;
+}
+
+.btn-secondary:not([disabled]):not(.disabled).active {
+    border-color: $color-secondary;
+    background-color: $color-secondary-rgba-60;
+}
+
+
+.btn-secondary:not([disabled]):not(.disabled):active, 
+.show>.btn-secondary.dropdown-toggle {
+    border-color: $color-secondary;
+    background-color: $color-secondary;
+}
+
+.btn-dark:not([disabled]):not(.disabled).active {
+    border-color: $color-dark;
+    background-color: $color-dark-rgba-60;
+}
+
+.btn-light:not([disabled]):not(.disabled):active, 
+.show>.btn-light.dropdown-toggle {
+    border-color: $color-light;
+    background-color: $color-light;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.btn-circle.btn-lg {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.btn-circle.btn-xl {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 28px;
+}
+
+.dropdown-menu {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+.dropdown-menu > li > a {
+    font-weight: 500;
+    color: $color5;
+    display: block;
+    min-width: 180px;
+    font-size: 14px;
+    padding: 8px 16px;
+
+    &:hover {
+        background-color: $color-primary-1;
+    }
+}
+
+.btn-icon {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    padding: 0;
+    color: #777;
+    background-color: #FFF;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        color: $colorF;
+        background-color: $color-primary-0;
+        border-color: $color-primary-0;
+    }
+}
+
+.btn-icon-bordered {
+    border: 1px solid #DDD;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 2px;
+}
+
+.btn-lg {
+    padding: 12px 30px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 2px;
+}
+
+.btn-pill {
+    border-radius: 60px;
+}
+
+.btn.btn-shadow, .btn-group.btn-shadow {
+    border-color: transparent;
+    box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.12), 0 10px 36px -4px rgba(77, 96, 232, 0.3);
+
+    &:hover, &:focus, &:active, &:active:focus {
+        box-shadow: 0px 5px 10px 2px rgba(88, 103, 221, 0.36);
+    }
+}
+
+/* [ MATERIAL CSS START ] */
+.mdl-button.button {
+    height: auto;
+    line-height: normal;
+    padding: 12px 30px;
+    font-weight: 400;
+    color: $colorF;
+    font-family: $font;
+    border-radius: 2px;
+}
+
+.mdl-button.button-default {
+    color: $color3;
+    background-color: $colorD;
+
+    &:hover {
+        background-color: $colorD;
+    }
+}
+
+.mdl-button.button-primary {
+    background-color: $color-primary;
+
+    &:hover {
+        background-color: $color-primary;
+    }
+}
+
+.mdl-button.button-secondary {
+    background-color: $color-secondary;
+
+    &:hover {
+        background-color: $color-secondary;
+    }
+}
+
+.mdl-button.button-success {
+    background-color: $color-success;
+
+    &:hover {
+        background-color: $color-success;
+    }
+}
+
+.mdl-button.button-warning {
+    background-color: $color-warning;
+
+    &:hover {
+     background-color: $color-warning; 
+ }
+}
+
+.mdl-button.button-danger {
+    background-color: $color-danger;
+
+    &:hover {
+        background-color: $color-danger;
+    }
+}
+
+.mdl-button.button-info {
+    background-color: $color-info;
+
+    &:hover {
+        background-color: $color-info;
+    }
+}
+
+.mdl-button.button-dark {
+    background-color: $color-dark;
+
+    &:hover {
+        background-color: $color-dark;
+    }
+}
+
+.mdl-button.button-light {
+    color: $color3;
+    background-color: $color-light;
+
+    &:hover {
+        background-color: $color-light;
+    }
+}
+
+.mdl-button.button-white {
+    color: $color3;
+    background-color: $colorF;
+
+    &:hover {
+        background-color: $color-light;
+    }
+}
+
+.mdl-button.button-transparent {
+    color: $color3;
+    background: transparent;
+}
+
+.mdl-button.button-hover-transparent {
+
+    &:hover {
+        color: $color3;
+        background: transparent;
+    }
+}
+
+.mdl-button.button-hover-primary {
+    &:hover {
+        color: $colorF;
+        background: $color-primary-0;
+    }
+}
+
+.mdl-button.button-hover-secondary {
+    &:hover {
+        color: $colorF;
+        background: $color-secondary;
+    }
+}
+
+.mdl-button.button-hover-success {
+    &:hover {
+        color: $colorF;
+        background: $color-success;
+    }
+}
+
+.mdl-button.button-hover-warning {
+    &:hover {
+        color: $colorF;
+        background: $color-warning;
+    }
+}
+
+.mdl-button.button-hover-danger {
+    &:hover {
+        color: $colorF;
+        background: $color-danger;
+    }
+}
+
+.mdl-button.button-hover-info {
+    &:hover {
+        color: $colorF;
+        background: $color-info;
+    }
+}
+
+.mdl-button.button-hover-dark {
+    &:hover {
+        color: $colorF;
+        background: $color-dark;
+    }
+}
+
+.mdl-button.button-hover-light {
+    &:hover {
+        color: $colorF;
+        background: $color-light;
+    }
+}
+
+.mdl-button.button-ouline-default {
+    border: 2px solid $colorD;
+}
+
+
+.mdl-button.button-ouline-primary {
+    border: 2px solid $color-primary-0;
+}
+
+.mdl-button.button-ouline-secondary {
+    border: 2px solid $color-secondary;
+}
+
+.mdl-button.button-ouline-success {
+    border: 2px solid $color-success;
+}
+
+.mdl-button.button-ouline-warning {
+    border: 2px solid $color-warning;
+}
+
+.mdl-button.button-ouline-danger {
+    border: 2px solid $color-danger;
+}
+
+.mdl-button.button-ouline-info {
+    border: 2px solid $color-info;
+}
+
+.mdl-button.button-ouline-dark {
+    border: 2px solid $color-dark;
+}
+
+.mdl-button.button-ouline-light {
+    border: 2px solid $color-light;
+}
+
+.mdl-button.button-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 2px;
+}
+
+.mdl-button.button-lg {
+    padding: 12px 30px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 2px;
+}
+
+.mdl-button.button-pill {
+    border-radius: 60px;   
+}
+
+.mdl-button.btn-icon {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    padding: 0;
+    color: $color7;
+    background-color: $colorF;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        color: $colorF;
+        background-color: $color-primary;
+        border-color: $color-primary-0;
+    }
+}
+
+.mdl-button.btn-icon-boredered {
+    border: 1px solid $colorD;
+
+    &:hover {
+        border-color: $color-primary-0;
+    }
+}

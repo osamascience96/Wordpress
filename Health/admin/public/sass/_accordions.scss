@@ -1,0 +1,46 @@
+
+.theme-accordion-container {
+    width: 100%;
+}
+
+.theme-accordion {
+    background: #f8f8f8;
+    border-radius: 4px;
+    border-bottom: 1px solid $colorD;
+
+    &:nth-last-child(1) {
+        border: 0;
+    }
+}
+
+.theme-accordion-hdr {
+    position: relative;
+    padding: 15px;
+    font-size: $mediumFont;
+    color: $color3;
+    cursor: pointer;
+
+    h4 {
+        font-size: 16px;
+        color: $color-primary-4;
+        margin: 0;
+    }
+}
+
+.theme-accordion-control {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    i {
+        font-size: 14px;
+        color: $color-primary-3;
+    }
+}
+
+.theme-accordion-bdy {
+    display: none;
+    width: 100%;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}

@@ -1,0 +1,126 @@
+.social-list {
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        vertical-align: middle;
+        list-style: none;
+        margin: 5px 0;
+
+        a {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            margin: 0 5px;
+            font-size: 20px;
+            color: $color7;
+        }
+    }
+}
+
+.social-list-sm {
+    li {
+        a {
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            margin: 2px;
+            font-size: 14px;
+        }
+    }
+}
+
+.social-list-lg {
+    li {
+        a {
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            font-size: 24px;
+        }
+    }
+}
+
+.social-list-colored {
+
+    li {
+        a {
+            color: $colorF;
+            &.fa-facebook {
+                background: #3B5999;
+            }
+            &.fa-twitter {
+                background: #55ACEE;
+            }
+            &.fa-google {
+                background: #DC4A38;
+            }
+            &.fa-instagram {
+                background: #AE8268;
+            }
+            &.fa-youtube {
+                background: #e42b26;
+            }
+            &.fa-linkedin {
+                background: #0274b3;
+            }
+            &.fa-flickr {
+                background: #ff0175;
+            }
+            &.fa-rss {
+                background: #f8991d;
+            }
+        }
+    }
+}
+
+.social-list-black {
+    li {
+        a {
+            color: $colorF;
+            background: $color5;
+
+            &:hover {
+                background: $color-primary-0;
+            }
+        }
+    }
+}
+
+.social-list-white {
+    li {
+        a {
+            color: $colorE;
+            background: transparent;
+            border: 1px solid $colorE;
+
+            &:hover {
+                border: 1px solid $color-primary-0;
+                background: $color-primary-0;
+            }
+        }
+    }
+}
+
+.social-list-bordered {
+
+    a {
+        border: 2px solid $color7;
+
+        &:hover {
+            color: $colorF;
+            border: 2px solid $color-primary-0;
+            background: $color-primary-0;
+        }
+    }
+}
+
+.social-list-rounded {
+
+    a {
+       border-radius: 50%;
+   }
+}

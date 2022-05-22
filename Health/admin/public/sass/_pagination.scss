@@ -1,0 +1,25 @@
+.pagination {
+	a {
+		color: $color-primary-0;
+	}
+}
+
+.pagination-colored {
+	a {
+		color: $colorF;
+		background-color: $color-primary-0;
+		border-color: $color-primary-2;
+
+		&:hover {
+			background-color: $color-primary-2;
+			border-color: $color-primary-2;
+		}
+	}
+
+	.page-item.active {
+		a {
+			background-color: $color-primary-3;
+			border-color: $color-primary-2;
+		}
+	}
+}
