@@ -1,0 +1,58 @@
+.botiga-accordion-hide {
+    display: none;
+}
+
+.botiga-accordion-title {
+    position: relative;
+    display: block;
+    background: #FFF;
+    padding: 13px 20px;
+    text-decoration: none;
+    color: #212121;
+    font-weight: 600;
+}
+
+.botiga-accordion-title:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-right: 2px solid #212121;
+    border-bottom: 2px solid #212121;
+    transform: rotate(45deg) translate3d(0, -50%, 0);
+    width: 5px;
+    height: 5px;
+    transform-origin: 50% 0%;
+}
+
+.botiga-accordion-title.expanded:after {
+    transform: rotate(-135deg) translate3d(0, -50%, 0);
+}
+
+.customize-control-botiga-accordion-item-wrapper {
+    margin-bottom: 0;
+}
+
+.botiga-accordion-item {
+    background: #e8e8e8;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.botiga-accordion-item + .customize-control:not(.botiga-accordion-item),
+.customize-control:not(.botiga-accordion-item) + .customize-control-botiga-accordion-item-wrapper {
+    margin-top: 15px;
+}
+
+.botiga-accordion-first-item {
+    padding-top: 23px;
+}
+
+.botiga-accordion-last-item {
+    padding-bottom: 23px;
+}
+
+.botiga-accordion-last-item.botiga-accordion-hide + .customize-control-botiga-accordion-item-wrapper {
+    margin-top: 15px;
+}

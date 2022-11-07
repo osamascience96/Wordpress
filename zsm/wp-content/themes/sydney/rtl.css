@@ -1,0 +1,165 @@
+/*
+* RTL support for Sydney
+*
+* Table of contents:
+* 1. General
+* 2. Menu
+* 3. Carousel
+* 4. Widgets
+* 5. Layout
+* 6. Blog
+* 7. Comments
+* 8. Footer
+*/
+
+
+/* 1. General */
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+/* 2. Menu */
+#mainnav {
+	float: left;
+}
+.site-header .col-md-4 {
+	float: right;
+}
+#mainnav li {
+	float: right;
+}
+#mainnav ul.menu li:last-of-type {
+	padding-left: 0;
+}
+#mainnav ul li ul,
+#mainnav li:hover > ul {
+	left: 0;
+	right: auto;
+}
+#mainnav ul li a {
+	float: right;
+}
+#mainnav ul li::before {
+	float: right;
+	margin: 5px 0 0 5px;
+}
+.btn-menu {
+	float: left;
+}
+#mainnav-mobi {
+	margin-top: 15px;
+}
+#mainnav-mobi ul > li > a {
+	text-align: right;
+}
+.btn-submenu {
+	left: 0;
+	right: auto;
+}
+@media only screen and (max-width: 767px) {
+	.btn-menu {
+		float: none;
+	}
+}
+
+.header-search-form {
+	left: auto;
+	right: -9999em;
+}
+.header-search-form.active {
+	right: 0;
+}
+.header-item {
+	margin-right: 0;
+	margin-left: 25px;
+}
+
+/* 3. Carousel */
+.owl-carousel {
+	direction: ltr;
+}
+
+/* 4. Widgets */
+.roll-progress .name {
+	right: 0;
+	left: auto;
+}
+.roll-progress .perc {
+	text-align: left;
+}
+.project-filter {
+	padding: 0;
+}
+
+/* 5. Layout */
+@media only screen and (min-width: 992px) {
+	.widget-area {
+		float: left;
+	}
+	.content-area {
+		float: right;
+	}
+	.content-area .post-wrap {
+		padding-right: 0;
+		padding-left: 20px;
+	}	
+}
+
+/* 6. Blog */
+.hentry .meta-post span {
+    padding-left: 0;
+    margin-right: 0;
+    padding-right: 20px;
+    margin-left: 18px;    
+}
+.hentry .meta-post span:before {
+	right: 0;
+	left: auto;
+}
+.hentry .meta-post {
+    direction: ltr;
+    text-align: right;
+}
+.hentry span.author.vcard {
+	margin: 0;
+	padding: 0;
+}
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: right;
+}
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: left;
+	text-align: left;
+}
+.posts-navigation .nav-previous {
+	padding-left: 0;
+	padding-right: 15px;
+}
+.posts-navigation .nav-next {
+	padding-right: 0;
+	padding-left: 15px;
+}
+.nav-previous .fa-long-arrow-left:before {
+	content: "\f178";
+}
+.nav-next .fa-long-arrow-right:before {
+	content: "\f177";
+}
+.content-area .hentry:after {
+	left: auto;
+	right: 0;
+}
+/* 7. Comments */
+.comment-author .fn, .comment-metadata {
+	margin-left: 0;
+	margin-right: 80px;
+}
+/* 8. Footer */
+.footer-widgets.widget-area {
+    float: none;
+}

@@ -1,0 +1,17 @@
+@media ( min-width: 991px ) {
+	.single-lp_course .sidebar-left,
+	.post-type-archive-lp_course .sidebar-left {
+		float: right;
+	}
+	.single-lp_course .sidebar-left .post-wrap,
+	.post-type-archive-lp_course .sidebar-left .post-wrap {
+		padding-right: 0;
+		padding-left: 50px;
+	}
+}
+#learn-press-user-profile #learn-press-profile-header {
+	background: #f5f5f5;
+}
+.learnpress .become-teacher-form {
+	margin-left: 0;
+}

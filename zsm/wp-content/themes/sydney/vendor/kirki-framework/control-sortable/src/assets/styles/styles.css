@@ -1,0 +1,17 @@
+.customize-control-kirki-sortable ul.ui-sortable li {
+  padding: 10px 15px;
+  border: 1px solid #d0d0d0;
+  background: #fff; }
+  .customize-control-kirki-sortable ul.ui-sortable li .dashicons.dashicons-menu {
+    float: right; 
+  }
+  .customize-control-kirki-sortable ul.ui-sortable li .dashicons.visibility {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #d0d0d0;
+  }
+  .customize-control-kirki-sortable ul.ui-sortable li.invisible {
+    color: #aaa;
+    border: 1px dashed #d0d0d0; }
+    .customize-control-kirki-sortable ul.ui-sortable li.invisible .dashicons.visibility {
+      color: #aaa; }

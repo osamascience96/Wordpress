@@ -1,0 +1,120 @@
+:root {
+	--sydney-headings-color: #00102E;
+	--sydney-dark-background: #00102E;
+	--sydney-grey-color: #737C8C;
+	--sydney-text-color: #233452;
+	--sydney-light-background: #F4F5F7;
+	--sydney-button-background: #d65050;
+}
+
+/* General */
+.editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper > *,
+.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > * {
+	max-width: 790px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > *[data-align=full] {
+	max-width: none;
+}
+.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > *[data-align=wide] {
+	max-width: calc(790px + 10vw);
+}
+
+.editor-styles-wrapper .wp-block {
+	margin-top: 0;
+	margin-bottom: 1.5em;
+}
+
+.editor-styles-wrapper .wp-block-heading {
+	margin-bottom: 0.5em;
+}
+.editor-styles-wrapper h1.wp-block-heading {
+	margin-top: 1em;
+} 
+.editor-styles-wrapper h2.wp-block-heading,
+.editor-styles-wrapper h3.wp-block-heading,
+.editor-styles-wrapper h4.wp-block-heading,
+.editor-styles-wrapper h5.wp-block-heading,
+.editor-styles-wrapper h6.wp-block-heading {
+	margin-top: 1.2em;
+}
+
+/* Blockquotes */
+.editor-styles-wrapper blockquote p {
+	font-size: 22px;
+}
+.editor-styles-wrapper blockquote.is-style-large,
+.editor-styles-wrapper blockquote {
+	background-color: var(--sydney-light-background);
+	font-size: 22px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 30px 30px 30px 40px;
+	position: relative;
+	border-left: 3px solid #000;
+	line-height: 1.2;
+}
+.editor-styles-wrapper .wp-block-pullquote .wp-block-pullquote__citation,
+.editor-styles-wrapper blockquote.is-style-large cite,
+.wp-block-quote cite,
+.editor-styles-wrapper blockquote cite {
+	color: var(--sydney-grey-color);
+	text-transform: uppercase;
+	font-size: 12px;
+	font-style: normal;
+	letter-spacing: 1px;
+}
+
+.editor-styles-wrapper blockquote.is-style-large {
+	font-size: 32px;
+}
+.editor-styles-wrapper blockquote.is-style-large p {
+	font-style: normal;
+	font-size: 32px;
+}
+.editor-styles-wrapper .wp-block-quote.is-style-large cite {
+	text-align: left;
+}
+
+.editor-styles-wrapper .wp-block-pullquote blockquote {
+	padding: 30px;
+	border: 3px solid #000;
+	margin-left: 0;
+	margin-right: 0;
+}
+.editor-styles-wrapper .wp-block-pullquote p {
+	font-size: 32px;
+}
+.editor-styles-wrapper .wp-block-pullquote {
+	border: 0;
+	padding: 0;
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+
+/* Buttons */
+.editor-styles-wrapper .wp-block-button {
+	margin-bottom: 0;
+}
+.editor-styles-wrapper .wp-block-button__link {
+	border-radius: 3px;
+	transition: all 0.3s ease-in-out;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.editor-styles-wrapper .wp-block-button:not(.is-style-outline) .wp-block-button__link {
+	background-color: var(--sydney-button-background);
+}
+.editor-styles-wrapper .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover {
+	opacity: 0.85;
+}
+.editor-styles-wrapper .wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color) {
+	color: var(--sydney-button-background);
+}
+.editor-styles-wrapper .wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color):hover {
+	background-color: var(--sydney-button-background);
+	border-color: var(--sydney-button-background);
+	color: #fff;
+}

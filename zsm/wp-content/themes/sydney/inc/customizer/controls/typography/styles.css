@@ -1,0 +1,14 @@
+.select2-container {
+    z-index: 999999 !important;
+    width: 100%;
+    max-width: 100%;    
+}
+.select2-drop-mask,
+.select2-drop-active {
+    z-index: 500000 !important;
+}
+
+.google_fonts_select_control .google-fonts,
+.google_fonts_select_control .weight-style {
+	margin-bottom: 10px;
+}

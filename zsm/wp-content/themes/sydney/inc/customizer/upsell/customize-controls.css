@@ -1,0 +1,35 @@
+#customize-theme-controls #accordion-section-sydney_upsell h3 {
+	background-color: #f7f7f7;
+	padding: 25px 14px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+#customize-theme-controls #accordion-section-sydney_upsell .button {
+	margin-left: 20px;
+}
+
+.sydney-upsell-feature-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding-top: 10px;
+}
+.sydney-upsell-feature-wrapper p {
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+}
+.sydney-upsell-feature-wrapper p:last-of-type {
+	text-align: right;
+}

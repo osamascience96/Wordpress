@@ -1,0 +1,131 @@
+/* LifterLMS
+-------------------------------------------------------------- */
+.content-area .page-title {
+	font-size: 36px;
+}
+.content-area .llms-loop-item {
+	padding: 0;
+}
+.llms-loop-item:after {
+	display: none;
+}
+.content-area .llms-loop-item .llms-loop-title,
+.content-area .llms-loop-item .llms-loop-item-footer > div {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.content-area .llms-loop-item .llms-loop-title {
+	margin-top: 20px;
+}
+.llms-loop-item-content {
+	padding-bottom: 20px;
+}
+.llms-loop-item-content .llms-author {
+	margin-bottom: 10px;
+}
+.llms-instructor-info {
+	margin-top: 30px;
+}
+.llms-button-action {
+	border: 1px solid #d65050;
+	background-color: #d65050;
+}
+.llms-button-action:hover {
+	border-color: #d65050;
+	color: #d65050; 
+}
+.llms-syllabus-wrapper .llms-lesson-preview {
+	width: 100%;
+}
+.llms-syllabus-wrapper .llms-lesson-counter {
+	margin: 0;
+}
+.llms-syllabus-wrapper .llms-lesson-preview {
+	display: block;
+	margin-top: 3px;
+}
+.llms-syllabus-wrapper {
+	margin-left: 0;
+	margin-right: 0;
+}
+.llms-course-navigation {
+	margin-top: 30px;
+}
+.llms-course-navigation h6 {
+	font-weight: 400;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.llms-course-navigation .llms-next-lesson h5,
+.llms-course-navigation .llms-next-lesson h6 {
+	text-align: right;
+}
+.llms-syllabus-wrapper h3 {
+	text-align: left;
+	font-size: 20px;
+	background-color: #2295ff;
+	padding: 15px;
+	color: #fff;
+}
+.llms-syllabus-wrapper h5 {
+	font-size: 16px;
+}
+.single-llms_membership .post-wrap {
+	padding-right: 0;
+}
+.fullwidth .post-wrap {
+	padding-right: 0;
+}
+.llms-checkout-wrapper .llms-notice {
+	border: 0;
+    background: #efefef;
+    margin-bottom: 30px;
+}
+.llms-checkout-wrapper .order-summary {
+	margin-bottom: 30px;
+}
+.llms-checkout-wrapper .llms-checkout-section {
+	border: 0;
+}
+.llms-checkout-wrapper .llms-checkout-section-content {
+	margin: 0;
+}
+.llms-checkout-wrapper .llms-checkout-section-content.llms-form-fields {
+	margin: 0 -10px;
+}
+.llms-checkout-wrapper .llms-form-heading {
+	background: transparent;
+    color: inherit;
+    padding: 0;
+    border-bottom: 2px solid #ebebeb;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+.llms-student-dashboard .llms-sd-item a {
+	color: #47425d;
+}	
+.llms-student-dashboard .llms-sd-header,
+.llms-student-dashboard section {
+    border-bottom: 2px solid #ebebeb;
+    padding-bottom: 30px;
+    margin-bottom: 30px;	
+}
+.llms-student-dashboard .llms-sd-section-title {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+@media (min-width: 800px) {
+	.llms-checkout-cols-2 .llms-checkout-col.llms-col-2 {
+		margin-left: 30px;
+		width: calc( 42% - 30px);
+	}
+}
+@media ( min-width: 991px ) {
+	.llms-content-area.sidebar-right {
+		padding-right: 30px;
+	}
+	.llms-content-area.sidebar-left {
+		float: right;
+		padding-left: 30px;
+	}
+}

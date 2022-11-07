@@ -1,0 +1,8 @@
+.select2-container {
+    z-index: 999999 !important;
+    width: 100%;
+}
+.select2-drop-mask,
+.select2-drop-active {
+    z-index: 500000 !important;
+}

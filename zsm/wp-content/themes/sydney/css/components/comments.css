@@ -1,0 +1,93 @@
+/*--------------------------------------------------------------
+Comments
+--------------------------------------------------------------*/
+.comments-area {
+	margin-bottom: 60px;
+	margin-top: 30px;
+}
+.comments-title {
+	margin: 0 0 30px 0;
+	font-size: 24px;
+}
+.comments-area ol {
+	list-style: none;
+}
+.comments-area ol {
+	padding: 0;
+}
+.comments-area .children {
+	padding-left: 20px;
+}
+.comments-area .fn {
+	color: #505050;
+}
+.comment-author .avatar {
+	position: absolute;
+}
+.comment-author .fn,
+.comment-metadata {
+	margin-left: 80px;
+}
+.comment-metadata {
+	font-size: 13px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.comment-form .form-submit {
+    margin-top: 20px;
+	margin-bottom: 0;
+}
+.comment-body {
+	margin-bottom: 40px;
+}
+.reply {
+	margin-left: 80px;
+	display: table;
+	margin-top: 15px;
+}
+.comment-reply-link {
+	font-weight: 600;
+}
+.comment-meta a {
+	color: var(--sydney-text-color);
+	text-decoration: none;
+}
+.bypostauthor {
+}
+.comment-form input:not([type="checkbox"]) {
+	width: 100%;
+	max-width: 100%;
+}
+.form-submit input {
+	width: auto;
+}
+.comment-content {
+	margin-left: 80px;
+}
+#commentform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+#commentform p {
+	width: 100%;
+}
+#commentform .comment-form-email,
+#commentform .comment-form-url {
+	width: calc(50% - 15px);
+}
+#commentform .comment-form-email {
+	margin-right: 15px;
+}
+#commentform .comment-form-url {
+	margin-left: 15px;
+}
+.comment-respond {
+	background-color: #fff;
+	padding: 60px;
+}
+.comment-respond .comment-notes {
+	margin-bottom: 40px;
+}
